@@ -1,0 +1,16 @@
+{
+  "name": "space-pendragon-devcontainer",
+  "customizations": {
+    "vscode": {
+      "extensions": ["svelte.svelte-vscode"],
+      "settings": {
+        "svelte.enable-ts-plugin": true
+      }
+    }
+  },
+  "image": "ghcr.io/iaingalloway/devcontainers/javascript:1.2-node22.2.0",
+  "remoteEnv": {
+    "HOST_WORKSPACE_PATH": "${localWorkspaceFolder}"
+  },
+  "runArgs": ["--name", "space-pendragon-devcontainer", "--network=host"]
+}
