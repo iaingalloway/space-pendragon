@@ -1,0 +1,16 @@
+{
+  "name": "Sir Arfius",
+  "glory": 4500,
+  "traits": {
+    "just": { "value": 16 }
+  },
+  "passions": [
+    { "key": "honour", "value": 12 },
+    { "key": "hospitality", "value": 12 },
+    { "key": "loyalty", "parameter": "Lord", "value": 16 },
+    { "key": "love", "parameter": "Family", "value": 12 }
+  ],
+  "skills": {
+    "sword": { "value": 15 }
+  }
+}
