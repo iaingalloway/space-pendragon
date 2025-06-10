@@ -16,11 +16,11 @@ const xJaw = 5;
 const yJaw = 15;
 
 // Pre-calculated path string
-export const TRAIT_SHIELD_PATH = `M ${xCentre} ${yOutsideOffset}
+export const traitShieldPath = `M ${xCentre} ${yOutsideOffset}
          L ${xBox - xShoulderOffset} ${yShoulderOffset}
          C ${xBox - xJaw} ${yBox - yJaw} ${xBox - xCheek} ${yCheek} ${xCentre} ${yBox - yOutsideOffset}
          C ${xCheek} ${yCheek} ${xJaw} ${yBox - yJaw} ${xShoulderOffset} ${yShoulderOffset}
          Z`;
 
 // Pre-calculated viewBox dimensions
-export const TRAIT_SHIELD_VIEWBOX = `0 0 ${xBox} ${yBox}`;
+export const traitShieldViewBox = `0 0 ${xBox} ${yBox}`;
