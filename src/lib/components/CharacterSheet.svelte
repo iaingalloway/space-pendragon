@@ -28,7 +28,7 @@
                 type="checkbox"
                 bind:checked={character.traits[key].virtueChecked}
                 class="checkbox"
-                aria-label={`Check if ${labels.traits[key].virtueLabel} is prominent`}
+                aria-label={`${labels.traits[key].virtueLabel} is checked`}
               />
               {labels.traits[key].virtueLabel}
             </span>
@@ -39,7 +39,7 @@
                 type="checkbox"
                 bind:checked={character.traits[key].viceChecked}
                 class="checkbox"
-                aria-label={`Check if ${labels.traits[key].viceLabel} is prominent`}
+                aria-label={`${labels.traits[key].viceLabel} is checked`}
               />
               <TraitShield
                 value={character.traits[key].value == undefined
@@ -65,7 +65,7 @@
                   type="checkbox"
                   bind:checked={passion.checked}
                   class="checkbox"
-                  aria-label={`Toggle ${passion.key == null ? 'passion' : labels.passions[passion.key].label}${isParameterisedPassionEntry(passion) ? ` (${passion.parameter})` : ''}`}
+                  aria-label={`${passion.key == null ? 'passion' : labels.passions[passion.key].label}${isParameterisedPassionEntry(passion) ? ` (${passion.parameter})` : ''} is checked`}
                 />
                 {passion.key == null ? '' : labels.passions[passion.key].label}
                 {#if isParameterisedPassionEntry(passion)}
@@ -93,7 +93,7 @@
                     type="checkbox"
                     bind:checked={character.skills[key].checked}
                     class="checkbox"
-                    aria-label={`Toggle ${labels.skills[key].label} skill`}
+                    aria-label={`${labels.skills[key].label} is checked`}
                   />
                   {labels.skills[key].label}
                 </span>
@@ -115,7 +115,7 @@
                     type="checkbox"
                     bind:checked={character.skills[key].checked}
                     class="checkbox"
-                    aria-label={`Toggle ${labels.skills[key].label} combat skill`}
+                    aria-label={`${labels.skills[key].label} is checked`}
                   />
                   {labels.skills[key].label}
                 </span>
