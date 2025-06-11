@@ -13,6 +13,7 @@ export default ts.config(
   includeIgnoreFile(gitignorePath),
   js.configs.recommended,
   ...ts.configs.recommended,
+  ...ts.configs.stylistic,
   ...svelte.configs.recommended,
   prettier,
   ...svelte.configs.prettier,
@@ -21,7 +22,18 @@ export default ts.config(
       globals: { ...globals.browser, ...globals.node }
     },
     rules: {
-      'no-undef': 'off'
+      'no-undef': 'off',
+      '@typescript-eslint/naming-convention': [
+        'error',
+        {
+          selector: 'variableLike',
+          format: ['camelCase', 'PascalCase']
+        },
+        {
+          selector: 'typeLike',
+          format: ['PascalCase']
+        }
+      ]
     }
   },
   {
