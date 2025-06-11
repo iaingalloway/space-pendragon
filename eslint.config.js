@@ -20,7 +20,40 @@ export default ts.config(
     languageOptions: {
       globals: { ...globals.browser, ...globals.node }
     },
-    rules: { 'no-undef': 'off' }
+    rules: {
+      'no-undef': 'off',
+      // Naming conventions
+      '@typescript-eslint/naming-convention': [
+        'error',
+        {
+          selector: 'variable',
+          format: ['camelCase', 'PascalCase', 'UPPER_CASE']
+        },
+        {
+          selector: 'function',
+          format: ['camelCase', 'PascalCase']
+        },
+        {
+          selector: 'typeLike',
+          format: ['PascalCase']
+        },
+        {
+          selector: 'enumMember',
+          format: ['UPPER_CASE', 'PascalCase']
+        }
+      ],
+      // Import organization
+      '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
+      // Code quality
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }
+      ],
+      '@typescript-eslint/explicit-function-return-type': 'off',
+      '@typescript-eslint/no-explicit-any': 'warn',
+      // Prefer const assertions
+      '@typescript-eslint/prefer-as-const': 'error'
+    }
   },
   {
     files: ['**/*.svelte', '**/*.svelte.ts', '**/*.svelte.js'],

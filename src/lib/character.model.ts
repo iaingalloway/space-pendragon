@@ -52,7 +52,7 @@ export const labels: Labels = {
     folklore: { label: 'Folklore' },
     gaming: { label: 'Gaming' },
     hunting: { label: 'Hunting' },
-    intrigue: { label: 'Intruigue' },
+    intrigue: { label: 'Intrigue' },
     literacy: { label: 'Literacy' },
     orate: { label: 'Orate' },
     playInstrument: { label: 'Play Instrument' },

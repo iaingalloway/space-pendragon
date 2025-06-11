@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { traitShieldPath, traitShieldViewBox } from './trait-shield-svg';
+  import { traitShieldPath, traitShieldViewBox } from './traitShieldSvg';
 
   export let value: number | null;
 </script>
