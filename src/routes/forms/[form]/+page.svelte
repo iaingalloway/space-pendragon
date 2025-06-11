@@ -5,6 +5,8 @@
 
 <ul>
   <li>You take the form of a <strong>{data.label}</strong></li>
+  <li>Aesthetic: <strong>{data.aesthetic}</strong></li>
+  <li>Instinct: <strong>{data.instinct}</strong></li>
   <li>+2 <strong>{labels.traits[data.bonus].virtueLabel}</strong></li>
   <li>+2 <strong>{labels.traits[data.malus].viceLabel}</strong></li>
 </ul>
