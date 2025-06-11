@@ -1,4 +1,4 @@
-import { Legends, type LegendKey } from '$lib/legends';
+import { type LegendKey, Legends } from '$lib/legends';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ params }) => {

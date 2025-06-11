@@ -3,7 +3,7 @@
   import { type CharacterViewModel } from '$lib/character.types';
   import { traitKeys } from '$lib/traits.types';
   import { combatSkillKeys, nonCombatSkillKeys } from '$lib/skills.types';
-  import { labels, isParameterisedPassionEntry } from '$lib/character.model';
+  import { isParameterisedPassionEntry, labels } from '$lib/character.model';
 
   export let character: CharacterViewModel;
 </script>
@@ -28,6 +28,7 @@
                 type="checkbox"
                 bind:checked={character.traits[key].virtueChecked}
                 class="checkbox"
+                aria-label={`Check if ${labels.traits[key].virtueLabel} is prominent`}
               />
               {labels.traits[key].virtueLabel}
             </span>
@@ -38,6 +39,7 @@
                 type="checkbox"
                 bind:checked={character.traits[key].viceChecked}
                 class="checkbox"
+                aria-label={`Check if ${labels.traits[key].viceLabel} is prominent`}
               />
               <TraitShield
                 value={character.traits[key].value == undefined
@@ -59,7 +61,12 @@
               class="border-outline flex items-center justify-between border-b py-1 last:border-0"
             >
               <span class="flex items-center gap-2">
-                <input type="checkbox" bind:checked={passion.checked} class="checkbox" />
+                <input
+                  type="checkbox"
+                  bind:checked={passion.checked}
+                  class="checkbox"
+                  aria-label={`Toggle ${passion.key == null ? 'passion' : labels.passions[passion.key].label}${isParameterisedPassionEntry(passion) ? ` (${passion.parameter})` : ''}`}
+                />
                 {passion.key == null ? '' : labels.passions[passion.key].label}
                 {#if isParameterisedPassionEntry(passion)}
                   <em>({passion.parameter})</em>
@@ -86,6 +93,7 @@
                     type="checkbox"
                     bind:checked={character.skills[key].checked}
                     class="checkbox"
+                    aria-label={`Toggle ${labels.skills[key].label} skill`}
                   />
                   {labels.skills[key].label}
                 </span>
@@ -107,6 +115,7 @@
                     type="checkbox"
                     bind:checked={character.skills[key].checked}
                     class="checkbox"
+                    aria-label={`Toggle ${labels.skills[key].label} combat skill`}
                   />
                   {labels.skills[key].label}
                 </span>

@@ -1,6 +1,6 @@
-import { type TraitKey, type TraitEntry, type NullableTraitEntry, traitKeys } from './traits.types';
-import type { PassionEntry, NullablePassionEntry } from './passions.types';
-import { type SkillKey, type SkillEntry, type NullableSkillEntry, skillKeys } from './skills.types';
+import { type NullableTraitEntry, type TraitEntry, type TraitKey, traitKeys } from './traits.types';
+import type { NullablePassionEntry, PassionEntry } from './passions.types';
+import { type NullableSkillEntry, type SkillEntry, type SkillKey, skillKeys } from './skills.types';
 
 export type CharacterData = {
   name: string;

@@ -1,13 +1,13 @@
-import type { TraitKey, TraitDefinition } from './traits.types';
+import type { TraitDefinition, TraitKey } from './traits.types';
 import type {
-  PassionKey,
-  PassionDefinition,
-  NullablePassionEntry,
   NullableParameterisedPassionEntry,
-  ParameterisedPassionKey
+  NullablePassionEntry,
+  ParameterisedPassionKey,
+  PassionDefinition,
+  PassionKey
 } from './passions.types';
 import { parameterisedPassionKeys } from './passions.types';
-import type { SkillKey, SkillDefinition } from './skills.types';
+import type { SkillDefinition, SkillKey } from './skills.types';
 
 type Labels = {
   traits: Record<TraitKey, TraitDefinition>;

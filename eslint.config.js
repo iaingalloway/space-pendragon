@@ -44,6 +44,16 @@ export default ts.config(
       ],
       // Import organization
       '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
+      // Simple import sorting without external plugin
+      'sort-imports': [
+        'error',
+        {
+          ignoreCase: false,
+          ignoreDeclarationSort: true, // We'll handle declaration sorting with another rule if needed
+          ignoreMemberSort: false,
+          memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single']
+        }
+      ],
       // Code quality
       '@typescript-eslint/no-unused-vars': [
         'error',

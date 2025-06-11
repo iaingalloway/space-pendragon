@@ -1,10 +1,10 @@
 import type { PageLoad } from './$types';
-import { traitKeys, type NullableTraitEntry, type TraitKey } from '$lib/traits.types';
+import { type NullableTraitEntry, type TraitKey, traitKeys } from '$lib/traits.types';
 import {
-  combatSkillKeys,
-  nonCombatSkillKeys,
   type NullableSkillEntry,
-  type SkillKey
+  type SkillKey,
+  combatSkillKeys,
+  nonCombatSkillKeys
 } from '$lib/skills.types';
 import {
   type NullableParameterlessPassionEntry,
