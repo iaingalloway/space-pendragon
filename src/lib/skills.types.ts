@@ -31,11 +31,6 @@ export interface SkillDefinition {
   label: string;
 }
 
-export interface SkillEntry {
-  value: number;
-  checked?: boolean;
-}
-
 export interface NullableCombatSkillEntry {
   key: CombatSkillKey | null;
   value: number | null;

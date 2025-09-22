@@ -2,7 +2,6 @@ import { type NullableTraitEntry, type TraitEntry, type TraitKey, traitKeys } fr
 import type { NullablePassionEntry, PassionEntry } from './passions.types';
 import {
   type SkillKey,
-  type SkillEntry,
   type NullableCombatSkillEntry,
   type NullableNonCombatSkillEntry,
   isCombatSkill,
@@ -12,9 +11,9 @@ import {
 export interface CharacterData {
   name: string;
   glory: number;
-  traits: Partial<Record<TraitKey, TraitEntry>>;
+  traits: Partial<Record<TraitKey, number>>;
   passions: PassionEntry[];
-  skills: Partial<Record<SkillKey, SkillEntry>>;
+  skills: Partial<Record<SkillKey, number>>;
 }
 
 export interface CharacterViewModel {
@@ -30,8 +29,8 @@ export function toViewModel(data: CharacterData): CharacterViewModel {
   const traits: Record<TraitKey, TraitEntry> = Object.fromEntries(
     traitKeys.map((key) => [
       key,
-      data.traits[key] ?? {
-        value: 10,
+      {
+        value: data.traits[key] ?? 10,
         virtueChecked: false,
         viceChecked: false
       }
@@ -40,7 +39,7 @@ export function toViewModel(data: CharacterData): CharacterViewModel {
 
   const skills = Object.entries(data.skills).map(([key, value]) => ({
     key: key as SkillKey,
-    value: value.value ?? 0,
+    value: value ?? 0,
     checked: false
   }));
 
