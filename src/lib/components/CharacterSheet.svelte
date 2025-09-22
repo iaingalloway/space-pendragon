@@ -2,7 +2,6 @@
   import TraitShield from '$lib/components/TraitShield.svelte';
   import { type CharacterViewModel } from '$lib/character.types';
   import { traitKeys } from '$lib/traits.types';
-  import { combatSkillKeys, nonCombatSkillKeys } from '$lib/skills.types';
   import { isParameterisedPassionEntry, labels } from '$lib/character.model';
 
   export let character: CharacterViewModel;
@@ -81,49 +80,53 @@
       <section id="skills">
         <h2 class="heading-lg print:heading-md mb-2">Skills</h2>
 
-        <section id="non-combat-skills">
-          <h3 class="heading-md print:heading-sm mb-2">Non-Combat</h3>
-          <ul
-            class="grid grid-cols-1 space-y-2 text-sm md:grid-cols-2 print:grid-cols-2 print:text-xs"
-          >
-            {#each nonCombatSkillKeys as key (key)}
-              <li class="border-outline m-1 flex items-center justify-between border-b py-1">
-                <span class="flex items-center gap-2">
-                  <input
-                    type="checkbox"
-                    bind:checked={character.skills[key].checked}
-                    class="checkbox"
-                    aria-label={`${labels.skills[key].label} is checked`}
-                  />
-                  {labels.skills[key].label}
-                </span>
-                <span class="value tabular-nums">{character.skills[key].value}</span>
-              </li>
-            {/each}
-          </ul>
-        </section>
+        {#if character.nonCombatSkills.length > 0}
+          <section id="non-combat-skills">
+            <h3 class="heading-md print:heading-sm mb-2">Non-Combat</h3>
+            <ul
+              class="grid grid-cols-1 space-y-2 text-sm md:grid-cols-2 print:grid-cols-2 print:text-xs"
+            >
+              {#each character.nonCombatSkills as skill, i (i)}
+                <li class="border-outline m-1 flex items-center justify-between border-b py-1">
+                  <span class="flex items-center gap-2">
+                    <input
+                      type="checkbox"
+                      bind:checked={skill.checked}
+                      class="checkbox"
+                      aria-label={`${skill.key == null ? 'skill' : labels.skills[skill.key].label} is checked`}
+                    />
+                    {skill.key == null ? '' : labels.skills[skill.key].label}
+                  </span>
+                  <span class="value tabular-nums">{skill.value}</span>
+                </li>
+              {/each}
+            </ul>
+          </section>
+        {/if}
 
-        <section id="combat-skills">
-          <h3 class="heading-md print:heading-sm mb-2">Combat</h3>
-          <ul
-            class="grid grid-cols-1 space-y-2 text-sm md:grid-cols-2 print:grid-cols-2 print:text-xs"
-          >
-            {#each combatSkillKeys as key (key)}
-              <li class="border-outline m-1 flex items-center justify-between border-b py-1">
-                <span class="flex items-center gap-2">
-                  <input
-                    type="checkbox"
-                    bind:checked={character.skills[key].checked}
-                    class="checkbox"
-                    aria-label={`${labels.skills[key].label} is checked`}
-                  />
-                  {labels.skills[key].label}
-                </span>
-                <span class="value tabular-nums">{character.skills[key].value}</span>
-              </li>
-            {/each}
-          </ul>
-        </section>
+        {#if character.combatSkills.length > 0}
+          <section id="combat-skills">
+            <h3 class="heading-md print:heading-sm mb-2">Combat</h3>
+            <ul
+              class="grid grid-cols-1 space-y-2 text-sm md:grid-cols-2 print:grid-cols-2 print:text-xs"
+            >
+              {#each character.combatSkills as skill, i (i)}
+                <li class="border-outline m-1 flex items-center justify-between border-b py-1">
+                  <span class="flex items-center gap-2">
+                    <input
+                      type="checkbox"
+                      bind:checked={skill.checked}
+                      class="checkbox"
+                      aria-label={`${skill.key == null ? 'skill' : labels.skills[skill.key].label} is checked`}
+                    />
+                    {skill.key == null ? '' : labels.skills[skill.key].label}
+                  </span>
+                  <span class="value tabular-nums">{skill.value}</span>
+                </li>
+              {/each}
+            </ul>
+          </section>
+        {/if}
       </section>
     </div>
   </div>

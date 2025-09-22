@@ -1,11 +1,6 @@
 import type { PageLoad } from './$types';
 import { type NullableTraitEntry, type TraitKey, traitKeys } from '$lib/traits.types';
-import {
-  type NullableSkillEntry,
-  type SkillKey,
-  combatSkillKeys,
-  nonCombatSkillKeys
-} from '$lib/skills.types';
+import type { NullableCombatSkillEntry, NullableNonCombatSkillEntry } from '$lib/skills.types';
 import {
   type NullableParameterlessPassionEntry,
   type NullablePassionEntry
@@ -27,16 +22,29 @@ export const load: PageLoad = async () => {
     { key: null, value: null } as NullableParameterlessPassionEntry
   ] as NullablePassionEntry[];
 
-  const skills = Object.fromEntries(
-    [...combatSkillKeys, ...nonCombatSkillKeys].map((key) => [key, { value: null, checked: false }])
-  ) as Record<SkillKey, NullableSkillEntry>;
+  const combatSkills = [
+    { key: 'battle', value: null },
+    { key: 'piloting', value: null },
+    { key: 'laserLance', value: null },
+    { key: 'sword', value: null }
+  ] as NullableCombatSkillEntry[];
+
+  const nonCombatSkills = [
+    { key: null, value: null } as NullableNonCombatSkillEntry,
+    { key: null, value: null } as NullableNonCombatSkillEntry,
+    { key: null, value: null } as NullableNonCombatSkillEntry,
+    { key: null, value: null } as NullableNonCombatSkillEntry,
+    { key: null, value: null } as NullableNonCombatSkillEntry,
+    { key: null, value: null } as NullableNonCombatSkillEntry
+  ];
 
   return {
     character: {
       name: '',
       traits,
       passions,
-      skills
+      combatSkills,
+      nonCombatSkills
     } as CharacterViewModel
   };
 };
