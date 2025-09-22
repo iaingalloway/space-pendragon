@@ -1,0 +1,12 @@
+{
+  "name": "Sir Baastias",
+  "glory": 3000,
+  "traits": {},
+  "passions": [
+    { "key": "honour", "value": 12 },
+    { "key": "hospitality", "value": 12 },
+    { "key": "loyalty", "parameter": "Lord", "value": 12 },
+    { "key": "love", "parameter": "Family", "value": 12 }
+  ],
+  "skills": {}
+}
