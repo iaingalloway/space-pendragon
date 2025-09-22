@@ -7,18 +7,18 @@
   export let character: CharacterViewModel;
 </script>
 
-<div class="section-container p-6 print:p-4">
-  <h1 class="heading-xl print:heading-lg">Pendragon</h1>
+<div class="section-container p-6">
+  <h1 class="h1">Pendragon</h1>
 
-  <div class="grid grid-cols-1 gap-8 md:grid-cols-2 print:grid-cols-2">
-    <span><strong>Name:</strong> {character.name}</span>
-    <span><strong>Glory:</strong> {character.glory}</span>
+  <div class="grid grid-cols-1 gap-8 md:grid-cols-5 print:grid-cols-5">
+    <span class="col-span-3"><strong>Name:</strong> {character.name}</span>
+    <span class="col-span-2"><strong>Glory:</strong> {character.glory}</span>
   </div>
 
-  <div class="grid grid-cols-1 gap-8 md:grid-cols-2 print:grid-cols-2">
-    <section id="traits">
-      <h2 class="heading-lg print:heading-md mb-2">Traits</h2>
-      <ul class="space-y-2 text-sm print:text-xs">
+  <div class="grid grid-cols-1 gap-8 md:grid-cols-5 print:grid-cols-5">
+    <section id="traits" class="col-span-3">
+      <h2 class="h2">Traits</h2>
+      <ul class="space-y-2 text-sm">
         {#each traitKeys as key (key)}
           <li class="border-outline flex items-center justify-between border-b py-1 last:border-0">
             <span class="flex items-center gap-2">
@@ -51,10 +51,10 @@
       </ul>
     </section>
 
-    <div class="flex flex-col gap-6">
+    <div class="flex flex-col gap-6 col-span-2">
       <section id="passions">
-        <h2 class="heading-lg print:heading-md mb-2">Passions</h2>
-        <ul class="space-y-2 text-sm print:text-xs">
+        <h2 class="h2">Passions</h2>
+        <ul class="space-y-2 text-sm">
           {#each character.passions as passion, i (i)}
             <li
               class="border-outline flex items-center justify-between border-b py-1 last:border-0"
@@ -78,13 +78,13 @@
       </section>
 
       <section id="skills">
-        <h2 class="heading-lg print:heading-md mb-2">Skills</h2>
+        <h2 class="h2">Skills</h2>
 
         <div class="flex flex-col gap-4">
           {#if character.nonCombatSkills.length > 0}
             <section id="non-combat-skills">
-              <h3 class="heading-md print:heading-sm mb-2">Non-Combat</h3>
-              <ul class="space-y-2 text-sm print:text-xs">
+              <h3 class="h3">Non-Combat</h3>
+              <ul class="space-y-2 text-sm">
                 {#each character.nonCombatSkills as skill, i (i)}
                   <li
                     class="border-outline flex items-center justify-between border-b py-1 last:border-0"
@@ -107,8 +107,8 @@
 
           {#if character.combatSkills.length > 0}
             <section id="combat-skills">
-              <h3 class="heading-md print:heading-sm mb-2">Combat</h3>
-              <ul class="space-y-2 text-sm print:text-xs">
+              <h3 class="h3">Combat</h3>
+              <ul class="space-y-2 text-sm">
                 {#each character.combatSkills as skill, i (i)}
                   <li
                     class="border-outline flex items-center justify-between border-b py-1 last:border-0"
