@@ -1,6 +1,13 @@
 import { type NullableTraitEntry, type TraitEntry, type TraitKey, traitKeys } from './traits.types';
 import type { NullablePassionEntry, PassionEntry } from './passions.types';
-import { type NullableSkillEntry, type SkillEntry, type SkillKey, skillKeys } from './skills.types';
+import {
+  type SkillKey,
+  type SkillEntry,
+  type NullableCombatSkillEntry,
+  type NullableNonCombatSkillEntry,
+  isCombatSkill,
+  isNonCombatSkill
+} from './skills.types';
 
 export interface CharacterData {
   name: string;
@@ -15,7 +22,8 @@ export interface CharacterViewModel {
   glory?: number;
   traits: Record<TraitKey, NullableTraitEntry>;
   passions: NullablePassionEntry[];
-  skills: Record<SkillKey, NullableSkillEntry>;
+  combatSkills: NullableCombatSkillEntry[];
+  nonCombatSkills: NullableNonCombatSkillEntry[];
 }
 
 export function toViewModel(data: CharacterData): CharacterViewModel {
@@ -30,21 +38,20 @@ export function toViewModel(data: CharacterData): CharacterViewModel {
     ])
   ) as Record<TraitKey, TraitEntry>;
 
-  const skills: Record<SkillKey, SkillEntry> = Object.fromEntries(
-    skillKeys.map((key) => [
-      key,
-      data.skills[key] ?? {
-        value: 0,
-        checked: false
-      }
-    ])
-  ) as Record<SkillKey, SkillEntry>;
+  const skills = Object.entries(data.skills).map(([key, value]) => ({
+    key: key as SkillKey,
+    value: value.value ?? 0,
+    checked: false
+  }));
 
   return {
     name: data.name,
     glory: data.glory,
     traits,
     passions: data.passions,
-    skills
+    combatSkills: skills.filter((s) => s.key && isCombatSkill(s.key)) as NullableCombatSkillEntry[],
+    nonCombatSkills: skills.filter(
+      (s) => s.key && isNonCombatSkill(s.key)
+    ) as NullableNonCombatSkillEntry[]
   };
 }
