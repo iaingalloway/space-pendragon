@@ -13,10 +13,12 @@
     stroke="black"
     stroke-width="4"
   >
-    <path d={traitShieldPath} fill="white" stroke="black" />
+    <path d={traitShieldPath} fill="{value === null || value < 16 ? "white" : "black"}" stroke="black" />
   </svg>
 
-  <span class="absolute inset-0 flex items-center justify-center text-[1.1rem] font-bold">
+  <span
+    class="absolute inset-0 flex items-center justify-center text-[1.1rem] font-bold{value === null || value < 16 ? '' : ' text-white'}"
+  >
     {value ?? ''}
   </span>
 </div>
