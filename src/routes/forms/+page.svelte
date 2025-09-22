@@ -1,5 +1,6 @@
 <script lang="ts">
   import { formKeys, forms } from '$lib/forms';
+  import { labels } from '$lib/character.model.js';
 </script>
 
 <table class="table-hover table">
@@ -8,6 +9,8 @@
       <th>Form</th>
       <th>Aesthetic</th>
       <th>Instinct</th>
+      <th>Bonus</th>
+      <th>Malus</th>
     </tr>
   </thead>
   <tbody>
@@ -16,6 +19,8 @@
         <td><a href="/forms/{key}" target="_blank">{forms[key].label}</a></td>
         <td>{forms[key].aesthetic}</td>
         <td>{forms[key].instinct}</td>
+        <td>{labels.traits[forms[key].bonus].virtueLabel}</td>
+        <td>{labels.traits[forms[key].malus].viceLabel}</td>
       </tr>
     {/each}
   </tbody>

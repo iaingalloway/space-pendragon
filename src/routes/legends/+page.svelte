@@ -1,5 +1,6 @@
 <script lang="ts">
   import { legendKeys, legends } from '$lib/legends';
+  import { labels } from '$lib/character.model.js';
 </script>
 
 <table class="table-hover table">
@@ -9,6 +10,8 @@
       <th>Aesthetic</th>
       <th>Flaw</th>
       <th>Grail Question</th>
+      <th>Bonus</th>
+      <th>Malus</th>
     </tr>
   </thead>
   <tbody>
@@ -18,6 +21,8 @@
         <td>{legends[key].aesthetic}</td>
         <td>{legends[key].flaw}</td>
         <td>{legends[key].grailQuestion}</td>
+        <td>{labels.traits[legends[key].bonus].virtueLabel}</td>
+        <td>{labels.traits[legends[key].malus].viceLabel}</td>
       </tr>
     {/each}
   </tbody>
