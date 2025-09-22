@@ -83,11 +83,11 @@
         {#if character.nonCombatSkills.length > 0}
           <section id="non-combat-skills">
             <h3 class="heading-md print:heading-sm mb-2">Non-Combat</h3>
-            <ul
-              class="grid grid-cols-1 space-y-2 text-sm md:grid-cols-2 print:grid-cols-2 print:text-xs"
-            >
+            <ul class="space-y-2 text-sm print:text-xs">
               {#each character.nonCombatSkills as skill, i (i)}
-                <li class="border-outline m-1 flex items-center justify-between border-b py-1">
+                <li
+                  class="border-outline flex items-center justify-between border-b py-1 last:border-0"
+                >
                   <span class="flex items-center gap-2">
                     <input
                       type="checkbox"
@@ -107,11 +107,11 @@
         {#if character.combatSkills.length > 0}
           <section id="combat-skills">
             <h3 class="heading-md print:heading-sm mb-2">Combat</h3>
-            <ul
-              class="grid grid-cols-1 space-y-2 text-sm md:grid-cols-2 print:grid-cols-2 print:text-xs"
-            >
+            <ul class="space-y-2 text-sm print:text-xs">
               {#each character.combatSkills as skill, i (i)}
-                <li class="border-outline m-1 flex items-center justify-between border-b py-1">
+                <li
+                  class="border-outline flex items-center justify-between border-b py-1 last:border-0"
+                >
                   <span class="flex items-center gap-2">
                     <input
                       type="checkbox"
