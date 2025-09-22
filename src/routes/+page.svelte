@@ -9,4 +9,5 @@
 <ul>
   <li><a href="/legends" target="_blank">Legends</a></li>
   <li><a href="/forms" target="_blank">Forms</a></li>
+  <li><a href="/mechs" target="_blank">Mechs</a></li>
 </ul>
