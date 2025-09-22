@@ -1,12 +1,27 @@
 {
   "name": "Sir Baastias",
   "glory": 3000,
-  "traits": {},
+  "traits": {
+    "forgiving": 8,
+    "honest": 16,
+    "modest": 8,
+    "trusting": 2,
+    "valorous": 16
+  },
   "passions": [
     { "key": "honour", "value": 12 },
     { "key": "hospitality", "value": 12 },
-    { "key": "loyalty", "parameter": "Lord", "value": 12 },
+    { "key": "loyalty", "parameter": "Lord", "value": 18 },
     { "key": "love", "parameter": "Family", "value": 12 }
   ],
-  "skills": {}
+  "skills": {
+    "awareness": 15,
+    "fashion": 10,
+    "hunting": 15,
+    "intrigue": 10,
+    "battle": 15,
+    "piloting": 15,
+    "laserLance": 15,
+    "sword": 20
+  }
 }
