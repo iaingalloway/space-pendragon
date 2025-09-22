@@ -1,0 +1,34 @@
+{
+  "name": "Prince Madoc ap Uther",
+  "glory": 3250,
+  "traits": {
+    "chaste": 12,
+    "energetic": 20,
+    "forgiving": 5,
+    "generous": 7,
+    "just": 5,
+    "merciful": 9,
+    "modest": 3,
+    "pious": 4,
+    "prudent": 5,
+    "temperate": 17,
+    "trusting": 7,
+    "valorous": 19
+  },
+  "passions": [
+    { "key": "honour", "value": 14 },
+    { "key": "hospitality", "value": 14 },
+    { "key": "loyalty", "parameter": "Lord", "value": 18 },
+    { "key": "love", "parameter": "Family", "value": 9 },
+    { "key": "hate", "parameter": "Saxons", "value": 17 }
+  ],
+  "skills": {
+    "awareness": 15,
+    "firstAid": 10,
+    "intrigue": 17,
+    "battle": 12,
+    "piloting": 20,
+    "sword": 16,
+    "laserLance": 18
+  }
+}

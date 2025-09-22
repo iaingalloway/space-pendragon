@@ -4,6 +4,7 @@
   <li><a href="/characters" target="_blank">Blank</a></li>
   <li><a href="/characters/arfius" target="_blank">Arfius</a></li>
   <li><a href="/characters/baastias" target="_blank">Baastias</a></li>
+  <li><a href="/characters/madoc" target="_blank">Madoc</a></li>
 </ul>
 
 <ul>
