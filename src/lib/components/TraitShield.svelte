@@ -2,6 +2,10 @@
   import { traitShieldPath, traitShieldViewBox } from './traitShieldSvg';
 
   export let value: number | null;
+
+  const isFamous = value !== null && value >= 16;
+  const fill = isFamous ? 'black' : 'white';
+  const textClass = isFamous ? ' text-white' : '';
 </script>
 
 <div class="relative h-10 w-8">
@@ -13,12 +17,11 @@
     stroke="black"
     stroke-width="4"
   >
-    <path d={traitShieldPath} fill="{value === null || value < 16 ? "white" : "black"}" stroke="black" />
+    <path d={traitShieldPath} fill={fill} stroke="black" />
   </svg>
 
   <span
-    class="absolute inset-0 flex items-center justify-center text-[1.1rem] font-bold{value === null || value < 16 ? '' : ' text-white'}"
-  >
+    class="absolute inset-0 flex items-center justify-center text-[1.1rem] font-bold{textClass}">
     {value ?? ''}
   </span>
 </div>
