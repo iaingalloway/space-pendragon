@@ -12,6 +12,8 @@ import { legends, legendKeys, type LegendKey } from '$lib/legends';
 export const load: PageLoad = async ({ url }) => {
   const formParam = url.searchParams.get('form');
   const legendParam = url.searchParams.get('legend');
+  const famousTraitParam = url.searchParams.get('famousTrait');
+  const invertTrait = url.searchParams.get('invertTrait') === '1';
 
   const formKey =
     formParam && (formKeys as readonly string[]).includes(formParam)
@@ -21,6 +23,11 @@ export const load: PageLoad = async ({ url }) => {
   const legendKey =
     legendParam && (legendKeys as readonly string[]).includes(legendParam)
       ? (legendParam as LegendKey)
+      : undefined;
+
+  const traitKey =
+    famousTraitParam && (traitKeys as readonly string[]).includes(famousTraitParam)
+      ? (famousTraitParam as TraitKey)
       : undefined;
 
   const formDef = formKey ? forms[formKey] : undefined;
@@ -46,6 +53,9 @@ export const load: PageLoad = async ({ url }) => {
   if (formDef) {
     traits[formDef.bonus].value = (traits[formDef.bonus].value ?? 10) + 2;
     traits[formDef.malus].value = (traits[formDef.malus].value ?? 10) - 2;
+  }
+  if (traitKey) {
+    traits[traitKey].value = invertTrait ? 4 : 16;
   }
 
   const passions = [
