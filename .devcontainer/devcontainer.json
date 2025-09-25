@@ -4,7 +4,8 @@
     "vscode": {
       "extensions": ["svelte.svelte-vscode"],
       "settings": {
-        "svelte.enable-ts-plugin": true
+        "svelte.enable-ts-plugin": true,
+        "chat.agent.enabled": true
       }
     }
   },
