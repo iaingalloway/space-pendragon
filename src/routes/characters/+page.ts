@@ -6,11 +6,47 @@ import {
   type NullablePassionEntry
 } from '$lib/passions.types';
 import type { CharacterViewModel } from '$lib/character.types';
+import { forms, formKeys, type FormKey } from '$lib/forms';
+import { legends, legendKeys, type LegendKey } from '$lib/legends';
 
-export const load: PageLoad = async () => {
+export const load: PageLoad = async ({ url }) => {
+  const formParam = url.searchParams.get('form');
+  const legendParam = url.searchParams.get('legend');
+
+  const formKey =
+    formParam && (formKeys as readonly string[]).includes(formParam)
+      ? (formParam as FormKey)
+      : undefined;
+
+  const legendKey =
+    legendParam && (legendKeys as readonly string[]).includes(legendParam)
+      ? (legendParam as LegendKey)
+      : undefined;
+
+  const formDef = formKey ? forms[formKey] : undefined;
+  const legendDef = legendKey ? legends[legendKey] : undefined;
+
+  const shouldPrefillTraits = Boolean(formDef || legendDef);
+
   const traits = Object.fromEntries(
-    traitKeys.map((key) => [key, { value: null, virtueChecked: false, viceChecked: false }])
+    traitKeys.map((key) => [
+      key,
+      {
+        value: shouldPrefillTraits ? 10 : null,
+        virtueChecked: false,
+        viceChecked: false
+      }
+    ])
   ) as Record<TraitKey, NullableTraitEntry>;
+
+  if (legendDef) {
+    traits[legendDef.bonus].value = (traits[legendDef.bonus].value ?? 10) + 3;
+    traits[legendDef.malus].value = (traits[legendDef.malus].value ?? 10) - 3;
+  }
+  if (formDef) {
+    traits[formDef.bonus].value = (traits[formDef.bonus].value ?? 10) + 2;
+    traits[formDef.malus].value = (traits[formDef.malus].value ?? 10) - 2;
+  }
 
   const passions = [
     { key: 'honour', value: null },
@@ -38,10 +74,18 @@ export const load: PageLoad = async () => {
     { key: null, value: null } as NullableNonCombatSkillEntry
   ];
 
+  const aestheticParts = [formDef?.aesthetic, legendDef?.aesthetic].filter(Boolean) as string[];
+  const aesthetic = aestheticParts.join(', ');
+
   return {
     character: {
       name: '',
       houseWords: '',
+      legend: legendDef?.label ?? '',
+      flaw: legendDef?.flaw ?? '',
+      grailQuestion: legendDef?.grailQuestion ?? '',
+      form: formKey,
+      aesthetic,
       traits,
       passions,
       combatSkills,
