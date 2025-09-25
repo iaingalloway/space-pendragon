@@ -1,6 +1,11 @@
 {
   "name": "Prince Madoc ap Uther",
   "glory": 3250,
+  "legend": "The Bastard",
+  "flaw": "Eager for glory",
+  "grailQuestion": "Can I prove myself worthy?",
+  "form": "lion",
+  "aesthetic": "Regal, Proud, Charming",
   "traits": {
     "chaste": 12,
     "energetic": 20,

@@ -1,6 +1,11 @@
 {
   "name": "Sir Baastias",
   "glory": 3000,
+  "legend": "The Bodyguard",
+  "flaw": "Sees enemies everywhere",
+  "grailQuestion": "Can I ever let my guard down?",
+  "form": "sheep",
+  "aesthetic": "Rugged, Practical, Unassuming",
   "traits": {
     "forgiving": 8,
     "honest": 16,

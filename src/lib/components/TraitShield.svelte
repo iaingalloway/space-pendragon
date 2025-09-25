@@ -17,11 +17,12 @@
     stroke="black"
     stroke-width="4"
   >
-    <path d={traitShieldPath} fill={fill} stroke="black" />
+    <path d={traitShieldPath} {fill} stroke="black" />
   </svg>
 
   <span
-    class="absolute inset-0 flex items-center justify-center text-[1.1rem] font-bold{textClass}">
+    class="absolute inset-0 flex items-center justify-center text-[1.1rem] font-bold{textClass}"
+  >
     {value ?? ''}
   </span>
 </div>

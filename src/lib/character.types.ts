@@ -7,22 +7,33 @@ import {
   isCombatSkill,
   isNonCombatSkill
 } from './skills.types';
+import type { FormKey } from './forms';
 
 export interface CharacterData {
   name: string;
   glory: number;
-  houseWords?: string;
+  houseWords: string | undefined;
   traits: Partial<Record<TraitKey, number>>;
   passions: PassionEntry[];
+  legend: string;
+  flaw: string;
+  grailQuestion: string;
+  form: FormKey;
+  aesthetic: string;
   skills: Partial<Record<SkillKey, number>>;
 }
 
 export interface CharacterViewModel {
   name: string;
   glory?: number;
-  houseWords?: string;
+  houseWords: string | undefined;
   traits: Record<TraitKey, NullableTraitEntry>;
   passions: NullablePassionEntry[];
+  legend: string;
+  flaw: string;
+  grailQuestion: string;
+  form?: FormKey;
+  aesthetic: string;
   combatSkills: NullableCombatSkillEntry[];
   nonCombatSkills: NullableNonCombatSkillEntry[];
 }
@@ -49,6 +60,11 @@ export function toViewModel(data: CharacterData): CharacterViewModel {
     name: data.name,
     glory: data.glory,
     houseWords: data.houseWords,
+    legend: data.legend,
+    flaw: data.flaw,
+    grailQuestion: data.grailQuestion,
+    form: data.form,
+    aesthetic: data.aesthetic,
     traits,
     passions: data.passions,
     combatSkills: skills.filter((s) => s.key && isCombatSkill(s.key)) as NullableCombatSkillEntry[],

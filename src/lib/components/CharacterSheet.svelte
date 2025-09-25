@@ -3,21 +3,37 @@
   import { type CharacterViewModel } from '$lib/character.types';
   import { traitKeys } from '$lib/traits.types';
   import { isParameterisedPassionEntry, labels } from '$lib/character.model';
+  import { forms } from '$lib/forms';
 
   export let character: CharacterViewModel;
+
+  $: form = character.form ? forms[character.form] : undefined;
 </script>
 
 <div class="section-container p-6">
   <h1 class="h1">Pendragon</h1>
 
   <div class="grid grid-cols-1 gap-8 md:grid-cols-5 print:grid-cols-5">
-    <span class="col-span-3"><strong>Name:</strong> {character.name}</span>
-    <span class="col-span-2"><strong>Glory:</strong> {character.glory}</span>
+    <div class="col-span-3">
+      <div><strong>Name:</strong> {character.name}</div>
+      <div><strong>Legend:</strong> {character.legend}</div>
+      <div><strong>Flaw:</strong> {character.flaw}</div>
+      <div><strong>Grail Question:</strong> {character.grailQuestion}</div>
+    </div>
+
+    <div class="col-span-2">
+      <div><strong>Glory:</strong> {character.glory}</div>
+      <div><strong>Form:</strong> {form?.label}</div>
+      <div><strong>Instinct:</strong> {form?.instinct}</div>
+      <div><strong>Aesthetic:</strong> {character.aesthetic}</div>
+    </div>
   </div>
 
   {#if character.houseWords}
     <div class="grid grid-cols-1 gap-8 md:grid-cols-5 print:grid-cols-5">
-      <span class="col-span-5"><strong>House Words:</strong> <em>"{character.houseWords}"</em></span>
+      <span class="col-span-5">
+        <strong>House Words:</strong> <em>"{character.houseWords}"</em>
+      </span>
     </div>
   {/if}
 
@@ -57,7 +73,7 @@
       </ul>
     </section>
 
-    <div class="flex flex-col gap-6 col-span-2">
+    <div class="col-span-2 flex flex-col gap-6">
       <section id="passions">
         <h2 class="h2">Passions</h2>
         <ul class="space-y-2 text-sm">

@@ -16,6 +16,7 @@ export const formKeys = [
   'mouse',
   'owl',
   'raven',
+  'sheep',
   'snake',
   'stag',
   'tiger',
@@ -144,6 +145,13 @@ export const forms: Record<FormKey, FormDefinition> = {
     instinct: 'Tempt',
     bonus: 'chaste',
     malus: 'temperate'
+  },
+  sheep: {
+    label: 'Sheep',
+    aesthetic: 'Humble, Gentle',
+    instinct: 'Conform',
+    bonus: 'honest',
+    malus: 'trusting'
   },
   stag: {
     label: 'Stag',

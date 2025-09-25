@@ -1,6 +1,11 @@
 {
   "name": "Sir Arfius",
   "glory": 4500,
+  "legend": "The Right Hand",
+  "flaw": "Loyal beyond reason",
+  "grailQuestion": "Do I trust myself?",
+  "form": "dog",
+  "aesthetic": "Strong, Eager, Attentive",
   "traits": {
     "just": 16
   },
