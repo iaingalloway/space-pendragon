@@ -15,6 +15,12 @@
     <span class="col-span-2"><strong>Glory:</strong> {character.glory}</span>
   </div>
 
+  {#if character.houseWords}
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-5 print:grid-cols-5">
+      <span class="col-span-5"><strong>House Words:</strong> <em>"{character.houseWords}"</em></span>
+    </div>
+  {/if}
+
   <div class="grid grid-cols-1 gap-8 md:grid-cols-5 print:grid-cols-5">
     <section id="traits" class="col-span-3">
       <h2 class="h2">Traits</h2>
