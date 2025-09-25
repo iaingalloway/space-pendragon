@@ -41,6 +41,7 @@ export const load: PageLoad = async () => {
   return {
     character: {
       name: '',
+      houseWords: '',
       traits,
       passions,
       combatSkills,

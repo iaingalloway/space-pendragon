@@ -11,6 +11,7 @@ import {
 export interface CharacterData {
   name: string;
   glory: number;
+  houseWords?: string;
   traits: Partial<Record<TraitKey, number>>;
   passions: PassionEntry[];
   skills: Partial<Record<SkillKey, number>>;
@@ -19,6 +20,7 @@ export interface CharacterData {
 export interface CharacterViewModel {
   name: string;
   glory?: number;
+  houseWords?: string;
   traits: Record<TraitKey, NullableTraitEntry>;
   passions: NullablePassionEntry[];
   combatSkills: NullableCombatSkillEntry[];
@@ -46,6 +48,7 @@ export function toViewModel(data: CharacterData): CharacterViewModel {
   return {
     name: data.name,
     glory: data.glory,
+    houseWords: data.houseWords,
     traits,
     passions: data.passions,
     combatSkills: skills.filter((s) => s.key && isCombatSkill(s.key)) as NullableCombatSkillEntry[],
