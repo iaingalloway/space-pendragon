@@ -4,4 +4,6 @@
   let { children } = $props();
 </script>
 
-{@render children()}
+<div class="section-container p-6">
+  {@render children()}
+</div>

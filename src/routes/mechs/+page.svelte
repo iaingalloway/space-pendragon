@@ -2,6 +2,8 @@
   import { mechKeys, mechs } from '$lib/mechs';
 </script>
 
+<h1 class="h1">Frames</h1>
+
 <table class="table-hover table">
   <thead>
     <tr>

@@ -3,6 +3,8 @@
   import { labels } from '$lib/character.model.js';
 </script>
 
+<h1 class="h1">Forms</h1>
+
 <table class="table-hover table">
   <thead>
     <tr>
