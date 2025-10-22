@@ -11,11 +11,11 @@
     "honest": 16,
     "modest": 8,
     "trusting": 2,
-    "valorous": 16
+    "valorous": 18
   },
   "passions": [
-    { "key": "honour", "value": 12 },
-    { "key": "hospitality", "value": 12 },
+    { "key": "honour", "value": 14 },
+    { "key": "hospitality", "value": 10 },
     { "key": "loyalty", "parameter": "Lord", "value": 18 },
     { "key": "love", "parameter": "Family", "value": 12 }
   ],

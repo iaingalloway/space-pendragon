@@ -16,6 +16,11 @@
     { "key": "love", "parameter": "Family", "value": 12 }
   ],
   "skills": {
-    "sword": 15
+    "battle": 12,
+    "courtesy": 10,
+    "intrigue": 10,
+    "laserLance": 15,
+    "piloting": 15,
+    "sword": 18
   }
 }
