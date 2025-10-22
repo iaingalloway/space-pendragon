@@ -1,6 +1,7 @@
 import type { TraitKey } from './traits.types';
 
 export const formKeys = [
+  'badger',
   'bat',
   'bear',
   'cat',
@@ -34,6 +35,13 @@ export interface FormDefinition {
 }
 
 export const forms: Record<FormKey, FormDefinition> = {
+  badger: {
+    label: 'Badger',
+    aesthetic: 'Stout, Tenacious',
+    instinct: 'Entrench',
+    bonus: 'prudent',
+    malus: 'generous'
+  },
   bat: {
     label: 'Bat',
     aesthetic: 'Shadowy, Elusive',

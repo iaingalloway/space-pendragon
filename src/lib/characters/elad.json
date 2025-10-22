@@ -1,0 +1,26 @@
+{
+  "name": "Sir Elad",
+  "glory": 325,
+  "legend": "The Defender",
+  "flaw": "Knowing what needs protecting",
+  "grailQuestion": "Must I always stand my ground?",
+  "form": "badger",
+  "aesthetic": "Greying, Scruffy, Stout",
+  "traits": {
+    "prudent": 16,
+    "valorous": 18
+  },
+  "passions": [
+    { "key": "honour", "value": 16 },
+    { "key": "hospitality", "value": 15 },
+    { "key": "loyalty", "parameter": "Lord", "value": 15 },
+    { "key": "love", "parameter": "Family", "value": 15 }
+  ],
+  "skills": {
+    "battle": 12,
+    "hunting": 15,
+    "laserLance": 15,
+    "piloting": 15,
+    "sword": 18
+  }
+}

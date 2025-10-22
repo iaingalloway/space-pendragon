@@ -14,6 +14,7 @@
     <ul class="list-disc list-inside px-4">
       <li>Roderick, Earl of Sarum</li>
       <li>Ellen, Countess of Sarum</li>
+      <li><a href="/characters/elad" target="_blank">Elad, Marshal of Sarum</a></li>
     </ul>
   </li>
 
