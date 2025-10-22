@@ -11,6 +11,7 @@ The ternary system of Brittania:
 
 ```text
 Albia system
+├─ Wyrmgate
 ├─ A1 Logres
 │   ├─ A1a Sarum
 │   ├─ A1b Lindsey
@@ -30,12 +31,12 @@ Albia system
 │   ├─ A3b Gwynedd
 │   ├─ A3c Estergales
 
-Erin system
+Erin system (6 ld)
 ├─ B1 – Taranis
 ├─ B2 – Dalrion
 ├─ B3 – Fomar
 
-Caledon system
+Caledon system (12 ld)
 ├─ C1 – Gorre
 ├─ The Outerworlds
 ```
