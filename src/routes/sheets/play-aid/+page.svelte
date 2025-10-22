@@ -118,9 +118,9 @@
     </section>
 
     <section>
-      <h1 class="h2">Names</h1>
+      <h2 class="h2">Names</h2>
 
-      <h2 class="h3">Male Names</h2>
+      <h3 class="h3">Male Names</h3>
       <p>
         Adtherp, Alarent, Alein, Aliduke, Annecians, Archade, Arnold, Arrouse, Bandelaine,
         Bastianor, Bellangere, Bellias, Berel, Bersules, Bliant, Breunis, Briant, Caulas, Cendrius,
@@ -133,7 +133,7 @@
         Pillounes, Plaine, Plenorias, Sauseise, Selises, Selivant, Semond, Tharanis.
       </p>
 
-      <h2 class="h3">Female Names</h2>
+      <h3 class="h3">Female Names</h3>
       <p>
         Ade, Alis, Arnive, Astrigis, Aveline, Belisant, Bene, Blancheflor, Carsenefi, Clariette,
         Cunneware, Delyse, Diane, Eirene, Elidis, Elizabeth, Enide, Esclarmonde, Esmere, Falisse,
