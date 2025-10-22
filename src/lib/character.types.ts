@@ -21,6 +21,7 @@ export interface CharacterData {
   form: FormKey;
   aesthetic: string;
   skills: Partial<Record<SkillKey, number>>;
+  notes: string[];
 }
 
 export interface CharacterViewModel {
