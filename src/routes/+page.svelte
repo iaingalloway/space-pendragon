@@ -12,7 +12,7 @@
 <ul class="list-disc list-inside p-4">
   <li>Roderick's court:
     <ul class="list-disc list-inside px-4">
-      <li>Roderick, Earl of Sarum</li>
+      <li><a href="/characters/roderick" target="_blank">Roderick, Earl of Sarum</a></li>
       <li>Ellen, Countess of Sarum</li>
       <li><a href="/characters/elad" target="_blank">Elad, Marshal of Sarum</a></li>
     </ul>

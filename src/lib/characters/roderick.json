@@ -1,0 +1,27 @@
+{
+  "name": "Roderick",
+  "glory": 300,
+  "legend": "The Bastion",
+  "flaw": "Carries too much",
+  "grailQuestion": "Can I ever set down my burdens?",
+  "form": "bear",
+  "aesthetic": "Boisterous, Jovial, Massive",
+  "traits": {
+    "generous": 16,
+    "prudent": 8,
+    "temperate": 8,
+    "valorous": 18
+  },
+  "passions": [
+    { "key": "honour", "value": 15 },
+    { "key": "hospitality", "value": 15 },
+    { "key": "loyalty", "parameter": "Lord", "value": 16 },
+    { "key": "love", "parameter": "Family", "value": 16 }
+  ],
+  "skills": {
+    "battle": 15,
+    "laserLance": 20,
+    "piloting": 18,
+    "sword": 20
+  }
+}
