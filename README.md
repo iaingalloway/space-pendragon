@@ -45,21 +45,19 @@ Caledon system (12 ld)
 
 ### Your Grandfather's History
 
-Your Grandfather was born in the Year 410 of the Local Reckoning, the final cycle in which the Brittania System was united under the rule of the **Terran Dominion**.
+When the mighty fleets of the **Terran Dominion** withdrew from the Brittania system in year 410 of the Local Reckoning, chaos followed.
 
-When the Dominion fleets withdrew, chaos followed.
+Raider flotillas from **Eryne** threatened outlying settlements and trade; from the **Caledon Rim**, the machine-clans of the Outworlds pressed inwards; and mercenary **Saxons** from neighbouring Galena sought to carve out their own fiefdoms upon the rich and undefended moons of Albia.
 
-From **Eryne** came raider flotillas; from the **Caledon Rim**, the machine-clans of the Outworlds pressed inwards; and mercenary **Saxons** from neighbouring Galena sought to carve out their own fiefdoms upon the rich and undefended moons of Albia.
-
-The **Supreme Collegium** - ancient prefects and stewards of the old Dominion - sent transmission after transmission through the Solar Gate begging for imperial aid, but none came. Emperor Honorius had no fleets to spare, and his final reply is still preserved in the archives of XXX Castle:
+The **Supreme Collegium** - ancient prefects and stewards of the old Dominion - sent transmission after transmission through the Wyrmgate begging for imperial aid, but none came. Emperor Honorius had no fleets to spare, and his final reply is still preserved in the archives of Sarum Castle:
 
 "Look to your own defences."
 
-From that moment, no Brittanian world considered itself a province of the Dominion again.
+From that moment, no Albian world considered itself a province of the Dominion.
 
-The Collegium, struggling to raise a fleet of their own from the scattered remnants of Dominion garrisons and local militias, met in orbit above XXX. After months of debate, they elected **Constantin of Logres** - a noble of vast wealth and renown - as King to unify the defences of the inner worlds.
+The Collegium, struggling to raise a fleet of their own from the scattered remnants of Dominion garrisons and local militias, met in orbit above Caercoulin. After months of debate, they elected **Constantin of Logres** - a noble of vast wealth and renown - as King to unify the defences of the inner worlds.
 
-Constantin decreed that for every thousand souls, a single pilot would be chosen and given stewardship of one of the surviving Dominion **Frames** - ancient mechanical war machines, relics of a bygone age whose machine spirits still answered to the call of a worthy warrior. These chosen defenders became the first **Knights of Logres**.
+Constantin decreed that for every ten-thousand souls, a single pilot would be chosen and given stewardship of one of the surviving Dominion **Frames** - ancient mechanical war machines, relics of a bygone age whose machine spirits still answered to the call of a worthy warrior. These chosen defenders became the first **Knights of Logres**.
 
 Amongst those first pilots was your great-grandparent.
 
@@ -75,3 +73,4 @@ Thus begins the recorded history of your line — the first sparks of honour in 
 
 ### Changes
 
+- Constans should be a she (Constance)
