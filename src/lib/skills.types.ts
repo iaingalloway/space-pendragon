@@ -5,7 +5,6 @@ export const courtlySkillKeys = [
   'dancing',
   'falconry',
   'fashion',
-  'firstAid',
   'flirting',
   'folklore',
   'gaming',
@@ -19,7 +18,7 @@ export const courtlySkillKeys = [
   'stewardship'
 ] as const;
 
-export const martialSkillKeys = ['battle', 'piloting', 'laserLance', 'sword'] as const;
+export const martialSkillKeys = ['battle', 'firstAid', 'piloting', 'laserLance', 'sword'] as const;
 
 export const skillKeys = [...courtlySkillKeys, ...martialSkillKeys] as const;
 
