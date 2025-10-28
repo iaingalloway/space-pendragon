@@ -61,8 +61,8 @@ export const labels: Labels = {
     stewardship: { label: 'Stewardship' },
     battle: { label: 'Battle' },
     piloting: { label: 'Piloting' },
-    sword: { label: 'Sword' },
-    laserLance: { label: 'Laser Lance' }
+    sword: { label: 'Sword (4d6 damage)' },
+    laserLance: { label: 'Laser Lance (5d6 damage)' }
   }
 };
 

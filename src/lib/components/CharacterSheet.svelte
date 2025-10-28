@@ -10,9 +10,10 @@
   $: form = character.form ? forms[character.form] : undefined;
 </script>
 
-<h1 class="h1">Pendragon</h1>
+<h1 class="h1 float-left">Pendragon</h1>
+<blockquote class="text-l float-left px-4 pt-10 block"><strong>Serve</strong> your lord; <strong>Defend</strong> the weak; <strong>Seek Glory</strong> among the stars</blockquote>
 
-<div class="grid grid-cols-1 gap-8 md:grid-cols-5 print:grid-cols-5">
+<div class="grid grid-cols-1 gap-8 md:grid-cols-5 print:grid-cols-5 clear-both">
   <div class="col-span-3">
     <div><strong>Name:</strong> {character.name}</div>
     <div><strong>Legend:</strong> {character.legend}</div>
@@ -38,10 +39,12 @@
 
 <div class="grid grid-cols-1 gap-8 md:grid-cols-5 print:grid-cols-5">
   <section id="traits" class="col-span-3">
-    <h2 class="h2">Traits</h2>
-    <ul class="space-y-2 text-sm">
+    <h2 class="h2 float-left">Traits</h2>
+    <blockquote class="text-sm float-left px-4 pt-8 block">Make a <strong>free choice</strong>; Roll one trait <strong>unopposed</strong>; Roll two traits <strong>opposed</strong></blockquote>
+
+    <ul class="text-xl clear-both">
       {#each traitKeys as key (key)}
-        <li class="border-outline flex items-center justify-between border-b py-1 last:border-0">
+        <li class="border-outline flex items-center justify-between border-b last:border-0">
           <span class="flex items-center gap-2">
             <TraitShield value={character.traits[key].value} />
             <input
@@ -72,10 +75,12 @@
     </ul>
   </section>
 
-  <div class="col-span-2 flex flex-col gap-6">
+  <div class="col-span-2 flex flex-col gap-2">
     <section id="passions">
-      <h2 class="h2">Passions</h2>
-      <ul class="space-y-2 text-sm">
+      <h2 class="h2 float-left">Passions</h2>
+      <blockquote class="text-sm float-left px-4 pt-8 block">Become <strong>Inspired</strong></blockquote>
+
+      <ul class="clear-both">
         {#each character.passions as passion, i (i)}
           <li
             class="border-outline flex items-center justify-between border-b py-1 last:border-0"
@@ -87,7 +92,7 @@
                 class="checkbox"
                 aria-label={`${passion.key == null ? 'passion' : labels.passions[passion.key].label}${isParameterisedPassionEntry(passion) ? ` (${passion.parameter})` : ''} is checked`}
               />
-              {passion.key == null ? '' : labels.passions[passion.key].label}
+              {passion.key == null ? '\u00A0' : labels.passions[passion.key].label}
               {#if isParameterisedPassionEntry(passion)}
                 <em>({passion.parameter})</em>
               {/if}
@@ -99,9 +104,10 @@
     </section>
 
     <section id="skills">
-      <h2 class="h2">Skills</h2>
+      <h2 class="h2 float-left">Skills</h2>
+      <blockquote class="text-sm float-left px-4 pt-8 block">Roll less than value for <strong>Success</strong>, equal for a <strong>Critical</strong></blockquote>
 
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col clear-both">
         {#if character.courtlySkills.length > 0}
           <section id="courtly-skills">
             <h3 class="h3">Courtly</h3>
@@ -117,7 +123,7 @@
                       class="checkbox"
                       aria-label={`${skill.key == null ? 'skill' : labels.skills[skill.key].label} is checked`}
                     />
-                    {skill.key == null ? '' : labels.skills[skill.key].label}
+                    {skill.key == null ? '\u00A0' : labels.skills[skill.key].label}
                   </span>
                   <span class="value tabular-nums">{skill.value}</span>
                 </li>
@@ -141,7 +147,7 @@
                       class="checkbox"
                       aria-label={`${skill.key == null ? 'skill' : labels.skills[skill.key].label} is checked`}
                     />
-                    {skill.key == null ? '' : labels.skills[skill.key].label}
+                    {skill.key == null ? '\u00A0' : labels.skills[skill.key].label}
                   </span>
                   <span class="value tabular-nums">{skill.value}</span>
                 </li>

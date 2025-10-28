@@ -8,10 +8,10 @@
   const textClass = isFamous ? ' text-white' : '';
 </script>
 
-<div class="relative h-10 w-8">
+<div class="relative h-14 w-11">
   <svg
     viewBox={traitShieldViewBox}
-    class="h-10 w-8"
+    class="h-14 w-12"
     xmlns="http://www.w3.org/2000/svg"
     fill="white"
     stroke="black"
@@ -21,8 +21,8 @@
   </svg>
 
   <span
-    class="absolute inset-0 flex items-center justify-center text-[1.1rem] font-bold{textClass}"
+    class="absolute inset-0 flex items-center justify-center text-[1.1rem] pb-1 font-bold{textClass}"
   >
-    {value ?? ''}
+    {value ?? '\u00A0'}
   </span>
 </div>
