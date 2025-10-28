@@ -2,10 +2,10 @@ import { type NullableTraitEntry, type TraitEntry, type TraitKey, traitKeys } fr
 import type { NullablePassionEntry, PassionEntry } from './passions.types';
 import {
   type SkillKey,
-  type NullableCombatSkillEntry,
-  type NullableNonCombatSkillEntry,
-  isCombatSkill,
-  isNonCombatSkill
+  type NullableMartialSkillEntry,
+  type NullableCourtlySkillEntry,
+  isMartialSkill,
+  isCourtlySkill
 } from './skills.types';
 import type { FormKey } from './forms';
 
@@ -35,8 +35,8 @@ export interface CharacterViewModel {
   grailQuestion: string;
   form?: FormKey;
   aesthetic: string;
-  combatSkills: NullableCombatSkillEntry[];
-  nonCombatSkills: NullableNonCombatSkillEntry[];
+  martialSkills: NullableMartialSkillEntry[];
+  courtlySkills: NullableCourtlySkillEntry[];
 }
 
 export function toViewModel(data: CharacterData): CharacterViewModel {
@@ -68,9 +68,9 @@ export function toViewModel(data: CharacterData): CharacterViewModel {
     aesthetic: data.aesthetic,
     traits,
     passions: data.passions,
-    combatSkills: skills.filter((s) => s.key && isCombatSkill(s.key)) as NullableCombatSkillEntry[],
-    nonCombatSkills: skills.filter(
-      (s) => s.key && isNonCombatSkill(s.key)
-    ) as NullableNonCombatSkillEntry[]
+    martialSkills: skills.filter((s) => s.key && isMartialSkill(s.key)) as NullableMartialSkillEntry[],
+    courtlySkills: skills.filter(
+      (s) => s.key && isCourtlySkill(s.key)
+    ) as NullableCourtlySkillEntry[]
   };
 }

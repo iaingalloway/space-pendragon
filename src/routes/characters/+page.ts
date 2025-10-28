@@ -1,6 +1,6 @@
 import type { PageLoad } from './$types';
 import { type NullableTraitEntry, type TraitKey, traitKeys } from '$lib/traits.types';
-import type { NullableCombatSkillEntry, NullableNonCombatSkillEntry } from '$lib/skills.types';
+import type { NullableMartialSkillEntry, NullableCourtlySkillEntry } from '$lib/skills.types';
 import {
   type NullableParameterlessPassionEntry,
   type NullablePassionEntry
@@ -68,20 +68,22 @@ export const load: PageLoad = async ({ url }) => {
     { key: null, value: null } as NullableParameterlessPassionEntry
   ] as NullablePassionEntry[];
 
-  const combatSkills = [
+  const martialSkills = [
     { key: 'battle', value: null },
     { key: 'piloting', value: null },
     { key: 'laserLance', value: null },
-    { key: 'sword', value: null }
-  ] as NullableCombatSkillEntry[];
+    { key: 'sword', value: null },
+    { key: null, value: null } as NullableMartialSkillEntry,
+    { key: null, value: null } as NullableMartialSkillEntry
+  ] as NullableMartialSkillEntry[];
 
-  const nonCombatSkills = [
-    { key: null, value: null } as NullableNonCombatSkillEntry,
-    { key: null, value: null } as NullableNonCombatSkillEntry,
-    { key: null, value: null } as NullableNonCombatSkillEntry,
-    { key: null, value: null } as NullableNonCombatSkillEntry,
-    { key: null, value: null } as NullableNonCombatSkillEntry,
-    { key: null, value: null } as NullableNonCombatSkillEntry
+  const courtlySkills = [
+    { key: null, value: null } as NullableCourtlySkillEntry,
+    { key: null, value: null } as NullableCourtlySkillEntry,
+    { key: null, value: null } as NullableCourtlySkillEntry,
+    { key: null, value: null } as NullableCourtlySkillEntry,
+    { key: null, value: null } as NullableCourtlySkillEntry,
+    { key: null, value: null } as NullableCourtlySkillEntry
   ];
 
   const aestheticParts = [formDef?.aesthetic, legendDef?.aesthetic].filter(Boolean) as string[];
@@ -98,8 +100,8 @@ export const load: PageLoad = async ({ url }) => {
       aesthetic,
       traits,
       passions,
-      combatSkills,
-      nonCombatSkills
+      martialSkills,
+      courtlySkills
     } as CharacterViewModel
   };
 };

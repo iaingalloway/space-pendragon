@@ -1,4 +1,4 @@
-export const nonCombatSkillKeys = [
+export const courtlySkillKeys = [
   'awareness',
   'compose',
   'courtesy',
@@ -19,37 +19,37 @@ export const nonCombatSkillKeys = [
   'stewardship'
 ] as const;
 
-export const combatSkillKeys = ['battle', 'piloting', 'laserLance', 'sword'] as const;
+export const martialSkillKeys = ['battle', 'piloting', 'laserLance', 'sword'] as const;
 
-export const skillKeys = [...nonCombatSkillKeys, ...combatSkillKeys] as const;
+export const skillKeys = [...courtlySkillKeys, ...martialSkillKeys] as const;
 
-export type NonCombatSkillKey = (typeof nonCombatSkillKeys)[number];
-export type CombatSkillKey = (typeof combatSkillKeys)[number];
-export type SkillKey = NonCombatSkillKey | CombatSkillKey;
+export type CourtlySkillKey = (typeof courtlySkillKeys)[number];
+export type MartialSkillKey = (typeof martialSkillKeys)[number];
+export type SkillKey = CourtlySkillKey | MartialSkillKey;
 
 export interface SkillDefinition {
   label: string;
 }
 
-export interface NullableCombatSkillEntry {
-  key: CombatSkillKey | null;
+export interface NullableMartialSkillEntry {
+  key: MartialSkillKey | null;
   value: number | null;
   checked?: boolean;
 }
 
-export interface NullableNonCombatSkillEntry {
-  key: NonCombatSkillKey | null;
+export interface NullableCourtlySkillEntry {
+  key: CourtlySkillKey | null;
   value: number | null;
   checked?: boolean;
 }
 
-const combatSet = new Set<SkillKey>(combatSkillKeys);
-const nonCombatSet = new Set<SkillKey>(nonCombatSkillKeys);
+const martialSet = new Set<SkillKey>(martialSkillKeys);
+const courtlySet = new Set<SkillKey>(courtlySkillKeys);
 
-export function isCombatSkill(key: SkillKey): boolean {
-  return combatSet.has(key);
+export function isMartialSkill(key: SkillKey): boolean {
+  return martialSet.has(key);
 }
 
-export function isNonCombatSkill(key: SkillKey): boolean {
-  return nonCombatSet.has(key);
+export function isCourtlySkill(key: SkillKey): boolean {
+  return courtlySet.has(key);
 }

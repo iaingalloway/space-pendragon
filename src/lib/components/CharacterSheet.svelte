@@ -102,11 +102,11 @@
       <h2 class="h2">Skills</h2>
 
       <div class="flex flex-col gap-4">
-        {#if character.nonCombatSkills.length > 0}
-          <section id="non-combat-skills">
-            <h3 class="h3">Non-Combat</h3>
-            <ul class="space-y-2 text-sm">
-              {#each character.nonCombatSkills as skill, i (i)}
+        {#if character.courtlySkills.length > 0}
+          <section id="courtly-skills">
+            <h3 class="h3">Courtly</h3>
+            <ul>
+              {#each character.courtlySkills as skill, i (i)}
                 <li
                   class="border-outline flex items-center justify-between border-b py-1 last:border-0"
                 >
@@ -126,11 +126,11 @@
           </section>
         {/if}
 
-        {#if character.combatSkills.length > 0}
-          <section id="combat-skills">
-            <h3 class="h3">Combat</h3>
-            <ul class="space-y-2 text-sm">
-              {#each character.combatSkills as skill, i (i)}
+        {#if character.martialSkills.length > 0}
+          <section id="martial">
+            <h3 class="h3">Martial</h3>
+            <ul>
+              {#each character.martialSkills as skill, i (i)}
                 <li
                   class="border-outline flex items-center justify-between border-b py-1 last:border-0"
                 >

@@ -91,11 +91,11 @@
       <h2 class="h2">Combat</h2>
 
       <ul class="list-inside list-disc p-4">
-        <li>Each knight has a list of <strong>Combat Skills</strong> they are trained in</li>
+        <li>Each knight has a list of <strong>Martial Skills</strong> they are trained in</li>
         <li>
           When in combat, the <strong>Chronicler</strong> will call for an
           <strong>Opposed Roll</strong>
-          using the relevant <strong>Combat Skill</strong>
+          using the relevant <strong>Martial Skill</strong>
         </li>
         <li>
           The victor deals damage to the loser based on their weapon:
