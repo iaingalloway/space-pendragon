@@ -61,7 +61,7 @@ Constantin decreed that for every ten-thousand souls, a single pilot would be ch
 
 Amongst those first pilots was your great-grandparent.
 
-Their eldest child - your grandparent - was born into that time of conflict, studying the ways and weapons of warfare. Your grandparent was knighted in 341 by Count Reginald of Salisbury, and proudly took their place in the fleet of King Constantin.
+Their eldest child - your grandparent - was born into that time of conflict, studying the ways and weapons of warfare. Your grandparent was knighted in 431 by Count Reginald of Salisbury, and proudly took their place in the fleet of King Constantin.
 
 *Choose a name for your great-grandparent, and their eldest child - your grandparent.*
 
