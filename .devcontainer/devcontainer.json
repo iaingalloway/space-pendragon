@@ -9,7 +9,7 @@
       }
     }
   },
-  "image": "ghcr.io/iaingalloway/devcontainers/javascript:1.2-node22.2.0",
+  "image": "ghcr.io/iaingalloway/devcontainers/javascript:1.4-node25.2.1",
   "remoteEnv": {
     "HOST_WORKSPACE_PATH": "${localWorkspaceFolder}"
   },
