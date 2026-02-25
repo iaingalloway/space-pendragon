@@ -81,10 +81,10 @@ Andrew's mum Bellisant disappeared in 468 with 206 glory
 
 ### Starting knights
 
-- Alex - Sir Merivil, Dolphin, Muse (debbieHarry), Indulgent, Hate Saxons
-- Dave - Sir Mornagor, Stag, Believer (bonjovi), Trusting
-- Andrew - Sir Baker of House Steele, Hawk, Outcast (janisjoplin), Suspicious
-- Iain - Alein, Dog, Lover (meatloaf), Reckless
-- Caroline - Blanchefleur, Owl, Mystic (stevienicks), Vengeful, Hate Saxons
+- Alex - Sir Merivil, Dolphin, Muse (debbieHarry), Indulgent, Valorous, Hate Saxons
+- Dave - Sir Mornagor, Stag, Believer (bonjovi), Trusting, Valorous, Honorable, Loyalty (Lord)
+- Andrew - Sir Baker of House Steele, Hawk, Outcast (janisjoplin), Suspicious, Valorous, Loyalty (Lord)
+- Iain - Sir Alein, Dog, Lover (meatloaf), Reckless, Valorous
+- Caroline - Sir Blanchefleur, Owl, Mystic (stevienicks), Vengeful, Hate Saxons
 
 Campaign begins in 485
