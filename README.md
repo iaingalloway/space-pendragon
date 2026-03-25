@@ -99,16 +99,19 @@ Andrew's mum Bellisant disappeared in 468 with 206 glory
 
 ### Starting knights
 
-- 289: Alex - Sir Merivil, Dolphin, Muse (debbieHarry), Indulgent, Valorous, Hate Saxons
+- 480: Alex - Sir Merivil, Dolphin, Muse (debbieHarry), Indulgent, Valorous, Hospitality, Hate Saxons
   - Innocence
-- 452: Dave - Sir Mornagor, Stag, Believer (bonjovi), Trusting, Valorous, Honorable, Loyalty (Lord)
+  - Married: Lady Bellisant
+- 541: Dave - Sir Mornagor, Stag, Believer (bonjovi), Trusting, Valorous, Honorable, Loyalty (Lord)
   - Justice
-  - 3x flirting successes
-- 258: Andrew - Sir Baker of House Steele, Hawk, Outcast (janisjoplin), Suspicious, Valorous, Loyalty (Lord)
+  - Married: Lady Felelonie
+- 347: Andrew - Sir Baker of House Steele, Hawk, Outcast (janisjoplin), Suspicious, Valorous, Loyalty (Lord), Love (Family)
   - Dawn
-- 294: Iain - Sir Alein, Dog, Lover (meatloaf), Reckless, Valorous, Hate (Saxons)
+  - Married: Gloria
+- 378: Iain - Sir Alein, Dog, Lover (meatloaf), Reckless, Valorous, Hate (Saxons)
   - Valor
-- 369: Caroline - Sir Blanchefleur, Owl, Mystic (stevienicks), Vengeful, Valorous, Hate Saxons
+- 442: Caroline - Sir Blanchefleur, Owl, Mystic (stevienicks), Vengeful, Valorous, Hate Saxons
   - Whisper
+  - Married: Lady Gweneira
 
 Campaign begins in 485
