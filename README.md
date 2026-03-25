@@ -41,6 +41,24 @@ Caledon system (12 ld)
 ├─ The Outerworlds
 ```
 
+The neighbouring Devetia/Occidentis system
+
+```text
+Devetia/Occidentis system
+├─ Wyrmgate (Lutetian Gate)
+├─ A1 – Lutetia Parisiorum (capital world)
+│   ├─ A1a – Île Spire (Praetor’s seat)
+│   ├─ A1b – Forum Rings
+│   ├─ A1c – Catacomb Levels
+├─ A2 – Noviodunum (Soissons)
+├─ A3 – Rotomagus (Rouen)
+├─ A4 – Aurelianum (Orléans)
+├─ A5 – Durocortorum (Reims)
+├─ A6 – Samarobriva (Amiens)
+├─ A7 – Gesoriacum (Boulogne)
+├─ A8 – Lugdunum (Lyon)
+```
+
 ## Sarum Family History
 
 ### Your Grandfather's History
