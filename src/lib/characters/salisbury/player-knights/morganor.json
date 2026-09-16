@@ -1,6 +1,6 @@
 {
   "name": "Sir Morganor of Gunnet",
-  "glory": 914,
+  "glory": 989,
   "legend": "The Believer",
   "flaw": "Faith blinds to harsh realities",
   "grailQuestion": "Is hope always naive?",
@@ -28,13 +28,13 @@
   ],
   "skills": {
     "battle": 12,
-    "laserLance": 19,
+    "laserLance": 20,
     "piloting": 11,
     "sword": 24,
     "awareness": 15,
     "flirting": 13,
     "stewardship": 5,
-    "hunting": 13,
+    "hunting": 14,
     "courtesy": 7
   }
 }

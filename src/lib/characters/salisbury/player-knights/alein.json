@@ -1,6 +1,6 @@
 {
   "name": "Sir Alein of Laverstock",
-  "glory": 951,
+  "glory": 1077,
   "legend": "The Lover",
   "flaw": "Yearns beyond reason",
   "grailQuestion": "What if love is not enough?",
@@ -16,7 +16,7 @@
     "modest": 8,
     "prudent": 2,
     "spiritual": 9,
-    "temperate": 7,
+    "temperate": 6,
     "valorous": 16
   },
   "passions": [
@@ -34,6 +34,6 @@
     "singing": 15,
     "firstAid": 13,
     "stewardship": 7,
-    "courtesy": 9
+    "courtesy": 14
   }
 }

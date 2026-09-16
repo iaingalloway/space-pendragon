@@ -1,6 +1,6 @@
 {
   "name": "Sir Merivil of Dinton",
-  "glory": 1073,
+  "glory": 1221,
   "legend": "The Muse",
   "flaw": "Defines self through others",
   "grailQuestion": "Am I more than my image?",
@@ -10,7 +10,7 @@
     "energetic": 12,
     "forgiving": 9,
     "just": 3,
-    "merciful": 14,
+    "merciful": 16,
     "modest": 4,
     "prudent": 13,
     "spiritual": 7,
@@ -32,10 +32,10 @@
     "laserLance": 12,
     "piloting": 11,
     "sword": 20,
-    "singing": 13,
+    "singing": 14,
     "swimming": 10,
-    "intrigue": 15,
+    "intrigue": 16,
     "stewardship": 15,
-    "hunting": 7
+    "hunting": 13
   }
 }

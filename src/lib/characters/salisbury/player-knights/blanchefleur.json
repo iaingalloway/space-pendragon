@@ -1,6 +1,6 @@
 {
   "name": "Sir Blanchefleur of Cholderton Moon",
-  "glory": 929,
+  "glory": 1046,
   "legend": "The Mystic",
   "flaw": "Haunted by visions",
   "grailQuestion": "Do I control my fate or does it control me?",
@@ -11,11 +11,11 @@
     "forgiving": 3,
     "honest": 7,
     "just": 9,
-    "merciful": 7,
-    "modest": 6,
+    "merciful": 8,
+    "modest": 4,
     "prudent": 15,
     "spiritual": 17,
-    "trusting": 8,
+    "trusting": 7,
     "valorous": 16
   },
   "passions": [

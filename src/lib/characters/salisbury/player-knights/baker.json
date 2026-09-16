@@ -1,6 +1,6 @@
 {
   "name": "Sir Baker of House Steele of Stapleford",
-  "glory": 936,
+  "glory": 1044,
   "legend": "The Outcast",
   "flaw": "Lonely despite charm",
   "grailQuestion": "Am I loved or just needed?",
@@ -13,7 +13,7 @@
     "honest": 12,
     "merciful": 11,
     "modest": 8,
-    "prudent": 14,
+    "prudent": 15,
     "spiritual": 8,
     "temperate": 9,
     "trusting": 4,
@@ -35,6 +35,6 @@
     "awareness": 13,
     "orate": 13,
     "stewardship": 13,
-    "courtesy": 4
+    "courtesy": 11
   }
 }

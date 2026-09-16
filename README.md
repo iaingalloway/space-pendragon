@@ -139,3 +139,26 @@ Merivil tells the story
 493:
 The Britons' wizard stole their prince. Their king cannot protect his own house. Why die for Uther?
 The queen is more distressed about her loss than the gossips credit her with.
+
+494:
+
+- Uther needs allies
+- Letter to Estregales
+  - Alliance, including marriage to Morgan
+  - The letter is actually from Ygraine
+- Meet
+  - King Kanan (Komodo Dragon)
+  - Sir Dirac (Komodo Dragon), his elder son, a young inexperienced knight
+  - Lak (Komodo Dragon), his younger son, a squire
+  - Sir Orcas (Orca - lol), his steward
+  - Aldwine Wordsmith is already there (working on Orcas)
+    - perhaps his henchmouse "Wulfric"
+- Court Stuff
+  - Make friends with Dirac - he wants to know what Morgan is like
+    - Is she a pilot too?
+- Kanan is minded to accept Uther's proposal
+- Orcas poisons him (handing a cup of poisoned wine to Dirac to give to Kanan)
+  - Orcas is ambitious
+  - Aldwine has offered him a position in the new order if Canan rejects the deal, but Orcas goes further and murders his lord
+    - "When Canan's reign ends, there will be opportunities for men who have chosen wisely."
+    - Orcas hears "We'll make you a ruler."
