@@ -110,6 +110,25 @@ strong {
   color: var(--color-surface-contrast-light);
 }
 
+.trait-shield-glitch {
+  animation: glitch-transform 10s steps(1, end) infinite;
+  position: relative;
+  z-index: 0;
+}
+
+.trait-shield-glitch-slice {
+  animation: glitch-slice 10s steps(1, end) infinite;
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.trait-shield-glitch-value {
+  animation: chromatic-aberration 10s steps(1, end) infinite;
+  z-index: 2;
+}
+
 .glitch-text {
   animation: glitch-transform 10s steps(1, end) infinite;
   color: var(--color-primary-500);
@@ -280,5 +299,16 @@ strong {
 
   .trait-shield-value.famous {
     color: var(--color-white);
+  }
+
+  .trait-shield-glitch,
+  .trait-shield-glitch-slice,
+  .trait-shield-glitch-value {
+    animation: none;
+    text-shadow: none;
+  }
+
+  .trait-shield-glitch-slice {
+    display: none;
   }
 }
