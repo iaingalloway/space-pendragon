@@ -99,21 +99,43 @@ Andrew's mum Bellisant disappeared in 468 with 206 glory
 
 ### Starting knights
 
-- 557: Alex - Sir Merivil, Dolphin, Muse (debbieHarry), Indulgent, Valorous, Hospitality, Hate Saxons
+- 945: Alex - Sir Merivil, Dolphin, Muse (debbieHarry), Indulgent, Proud, Valorous, Hospitality, Hate (Saxons), Arbitrary, Trusting, Loyalty (Lord)
   - Innocence
-  - Married: Lady Bellisant
-- 541: Dave - Sir Mornagor, Stag, Believer (bonjovi), Trusting, Valorous, Honorable, Loyalty (Lord)
+  - Married: Lady Obie
+- 839: Dave - Sir Mornagor, Stag, Believer (bonjovi), Trusting, Valorous, Honorable, Loyalty (Lord)
   - Justice
   - Married: Lady Felelonie
-- 421: Andrew - Sir Baker of House Steele, Hawk, Outcast (janisjoplin), Suspicious, Valorous, Loyalty (Lord), Love (Family)
+- 828: Andrew - Sir Baker of House Steele, Hawk, Outcast (janisjoplin), Suspicious, Valorous, Hospitality, Loyalty (Lord), Love (Family), Honourable
   - Dawn
   - Married: Gloria
-- 437: Iain - Sir Alein, Dog, Lover (meatloaf), Reckless, Valorous, Hate (Saxons)
+- 825: Iain - Sir Alein, Dog, Lover (meatloaf), Reckless, Valorous, Hate (Saxons), Love (Family), Honourable, Hospitable
   - Valor
-- 506: Caroline - Sir Blanchefleur, Owl, Mystic (stevienicks), Spiritual, Vengeful, Valorous, Hate Saxons
+- 837: Caroline - Sir Blanchefleur, Owl, Mystic (stevienicks), Spiritual, Vengeful, Valorous, Hate (Saxons), Love (Family)
   - Whisper
   - Married: Lady Gweneira
 
 Campaign begins in 485
 
 489: Morganor fumbled love family searching for his missing mother
+
+Players cheering on Madoc vs Baastias
+
+Blanchefleur, Morganor, Baker are all too wounded to fight
+
+Alein fails indulgent
+Blanchefleur fails temperate
+Baker fails indulgent
+Merevil succeeds indulgent
+
+Morganor succeeds temperate, but is then seduced by fox populi
+
+Sir Cleremond
+Sir Pedivere
+
+Sir Alein is hosting Sir Berel who fought alongisde his mother at the Battle of Windsor (He's an adulterer)
+
+Merivil tells the story
+
+493:
+The Britons' wizard stole their prince. Their king cannot protect his own house. Why die for Uther?
+The queen is more distressed about her loss than the gossips credit her with.
