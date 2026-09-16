@@ -1,8 +1,8 @@
 # Space pendragon
 
 ```bash
-npm install
-npm run dev
+just install
+just dev
 ```
 
 ## Setting bible
