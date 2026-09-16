@@ -55,11 +55,15 @@
               class="checkbox"
               aria-label={`${labels.traits[key].virtueLabel} is checked`}
             />
-            {labels.traits[key].virtueLabel}
+            <span
+              class:famous-glitch={character.traits[key].value !== null && character.traits[key].value >= 16}
+            >{labels.traits[key].virtueLabel}</span>
           </span>
 
           <span class="flex items-center gap-2">
-            {labels.traits[key].viceLabel}
+            <span
+              class:famous-glitch={character.traits[key].value !== null && character.traits[key].value <= 4}
+            >{labels.traits[key].viceLabel}</span>
             <input
               type="checkbox"
               bind:checked={character.traits[key].viceChecked}
@@ -96,12 +100,19 @@
                 class="checkbox"
                 aria-label={`${passion.key == null ? 'passion' : labels.passions[passion.key].label}${isParameterisedPassionEntry(passion) ? ` (${passion.parameter})` : ''} is checked`}
               />
-              {passion.key == null ? '\u00A0' : labels.passions[passion.key].label}
-              {#if isParameterisedPassionEntry(passion)}
-                <em>({passion.parameter})</em>
-              {/if}
+              <span
+                class:famous-glitch={passion.value !== null && passion.value >= 16}
+              >
+                {passion.key == null ? '\u00A0' : labels.passions[passion.key].label}
+                {#if isParameterisedPassionEntry(passion)}
+                  <em>({passion.parameter})</em>
+                {/if}
+              </span>
             </span>
-            <span class="value tabular-nums">{passion.value}</span>
+            <span
+              class:famous-glitch={passion.value !== null && passion.value >= 16}
+              class="value passion-value tabular-nums"
+            >{passion.value}</span>
           </li>
         {/each}
       </ul>
