@@ -1,0 +1,40 @@
+{
+  "name": "Sir Baker of House Steele of Stapleford",
+  "glory": 936,
+  "legend": "The Outcast",
+  "flaw": "Lonely despite charm",
+  "grailQuestion": "Am I loved or just needed?",
+  "form": "hawk",
+  "aesthetic": "Sharp, Precise, Raw, Flamboyant",
+  "traits": {
+    "chaste": 8,
+    "energetic": 11,
+    "forgiving": 11,
+    "honest": 12,
+    "merciful": 11,
+    "modest": 8,
+    "prudent": 14,
+    "spiritual": 8,
+    "temperate": 9,
+    "trusting": 4,
+    "valorous": 17
+  },
+  "passions": [
+    { "key": "honour", "value": 16 },
+    { "key": "hospitality", "value": 16 },
+    { "key": "loyalty", "parameter": "Lord", "value": 16 },
+    { "key": "love", "parameter": "Family", "value": 17 },
+    { "key": "hate", "parameter": "Silchester", "value": 12 },
+    { "key": "lust", "parameter": "Ygraine", "value": 15 }
+  ],
+  "skills": {
+    "battle": 12,
+    "laserLance": 19,
+    "piloting": 11,
+    "sword": 20,
+    "awareness": 13,
+    "orate": 13,
+    "stewardship": 13,
+    "courtesy": 4
+  }
+}

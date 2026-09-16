@@ -1,0 +1,38 @@
+{
+  "name": "Sir Blanchefleur of Cholderton Moon",
+  "glory": 929,
+  "legend": "The Mystic",
+  "flaw": "Haunted by visions",
+  "grailQuestion": "Do I control my fate or does it control me?",
+  "form": "owl",
+  "aesthetic": "Quiet, Mysterious, Mysterious, Lyrical",
+  "traits": {
+    "chaste": 11,
+    "forgiving": 3,
+    "honest": 7,
+    "just": 9,
+    "merciful": 7,
+    "modest": 6,
+    "prudent": 15,
+    "spiritual": 17,
+    "trusting": 8,
+    "valorous": 16
+  },
+  "passions": [
+    { "key": "honour", "value": 15 },
+    { "key": "hospitality", "value": 15 },
+    { "key": "loyalty", "parameter": "Lord", "value": 15 },
+    { "key": "love", "parameter": "Family", "value": 16 },
+    { "key": "hate", "parameter": "Saxons", "value": 16 },
+    { "key": "lust", "parameter": "Ygraine", "value": 13 }
+  ],
+  "skills": {
+    "battle": 10,
+    "laserLance": 19,
+    "piloting": 13,
+    "sword": 20,
+    "firstAid": 10,
+    "compose": 16,
+    "stewardship": 12
+  }
+}

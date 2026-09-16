@@ -1,5 +1,5 @@
 export const parameterlessPassionKeys = ['honour', 'hospitality'] as const;
-export const parameterisedPassionKeys = ['loyalty', 'love', 'hate'] as const;
+export const parameterisedPassionKeys = ['loyalty', 'love', 'hate', 'lust'] as const;
 export type ParamaterlessPassionKey = (typeof parameterlessPassionKeys)[number];
 export type ParameterisedPassionKey = (typeof parameterisedPassionKeys)[number];
 export type PassionKey = ParamaterlessPassionKey | ParameterisedPassionKey;

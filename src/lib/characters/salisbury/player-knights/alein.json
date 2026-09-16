@@ -1,0 +1,39 @@
+{
+  "name": "Sir Alein of Laverstock",
+  "glory": 951,
+  "legend": "The Lover",
+  "flaw": "Yearns beyond reason",
+  "grailQuestion": "What if love is not enough?",
+  "form": "dog",
+  "aesthetic": "Friendly, Reliable, Tragic, Operatic",
+  "traits": {
+    "chaste": 12,
+    "energetic": 9,
+    "forgiving": 11,
+    "generous": 12,
+    "honest": 8,
+    "merciful": 9,
+    "modest": 8,
+    "prudent": 2,
+    "spiritual": 9,
+    "temperate": 7,
+    "valorous": 16
+  },
+  "passions": [
+    { "key": "honour", "value": 16 },
+    { "key": "hospitality", "value": 16 },
+    { "key": "loyalty", "parameter": "Lord", "value": 16 },
+    { "key": "love", "parameter": "Family", "value": 17 },
+    { "key": "hate", "parameter": "Saxons", "value": 17 }
+  ],
+  "skills": {
+    "battle": 15,
+    "laserLance": 16,
+    "piloting": 12,
+    "sword": 23,
+    "singing": 15,
+    "firstAid": 13,
+    "stewardship": 7,
+    "courtesy": 9
+  }
+}

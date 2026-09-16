@@ -37,7 +37,8 @@ export const labels: Labels = {
     loyalty: { label: 'Loyalty' },
     hospitality: { label: 'Hospitality' },
     love: { label: 'Love' },
-    hate: { label: 'Hate' }
+    hate: { label: 'Hate' },
+    lust: { label: 'Lust' }
   },
 
   skills: {

@@ -1,0 +1,40 @@
+{
+  "name": "Sir Morganor of Gunnet",
+  "glory": 914,
+  "legend": "The Believer",
+  "flaw": "Faith blinds to harsh realities",
+  "grailQuestion": "Is hope always naive?",
+  "form": "stag",
+  "aesthetic": "Graceful, Fragile, Earnest, Heartfelt",
+  "traits": {
+    "chaste": 12,
+    "energetic": 13,
+    "generous": 9,
+    "honest": 9,
+    "just": 9,
+    "modest": 6,
+    "prudent": 12,
+    "spiritual": 8,
+    "temperate": 11,
+    "trusting": 16,
+    "valorous": 17
+  },
+  "passions": [
+    { "key": "honour", "value": 16 },
+    { "key": "hospitality", "value": 15 },
+    { "key": "loyalty", "parameter": "Lord", "value": 16 },
+    { "key": "love", "parameter": "Family", "value": 15 },
+    { "key": "hate", "parameter": "Saxons", "value": 10 }
+  ],
+  "skills": {
+    "battle": 12,
+    "laserLance": 19,
+    "piloting": 11,
+    "sword": 24,
+    "awareness": 15,
+    "flirting": 13,
+    "stewardship": 5,
+    "hunting": 13,
+    "courtesy": 7
+  }
+}
