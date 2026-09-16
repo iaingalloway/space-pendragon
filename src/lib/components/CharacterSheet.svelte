@@ -10,7 +10,7 @@
   $: form = character.form ? forms[character.form] : undefined;
 </script>
 
-<h1 class="h1 float-left">Pendragon</h1>
+<h1 class="h1 glitch-text float-left"><span class="glitch-text__content">Pendragon</span><span class="glitch-text__slice" aria-hidden="true">Pendragon</span></h1>
 <blockquote class="text-l float-left px-4 pt-10 block"><strong>Serve</strong> your lord; <strong>Defend</strong> the weak; <strong>Seek Glory</strong> among the stars</blockquote>
 
 <div class="grid grid-cols-1 gap-8 md:grid-cols-5 print:grid-cols-5 clear-both">
@@ -39,8 +39,10 @@
 
 <div class="grid grid-cols-1 gap-8 md:grid-cols-5 print:grid-cols-5">
   <section id="traits" class="col-span-3">
-    <h2 class="h2 float-left">Traits</h2>
-    <blockquote class="text-sm float-left px-4 pt-8 block">Make a <strong>free choice</strong>; Roll one trait <strong>unopposed</strong>; Roll two traits <strong>opposed</strong></blockquote>
+    <div class="flex items-baseline gap-4">
+      <h2 class="h2 glitch-text"><span class="glitch-text__content">Traits</span><span class="glitch-text__slice" aria-hidden="true">Traits</span></h2>
+      <blockquote class="text-sm">Make a <strong>free choice</strong>; Roll one trait <strong>unopposed</strong>; Roll two traits <strong>opposed</strong></blockquote>
+    </div>
 
     <ul class="text-xl clear-both">
       {#each traitKeys as key (key)}
@@ -77,8 +79,10 @@
 
   <div class="col-span-2 flex flex-col gap-2">
     <section id="passions">
-      <h2 class="h2 float-left">Passions</h2>
-      <blockquote class="text-sm float-left px-4 pt-8 block">Become <strong>Inspired</strong></blockquote>
+      <div class="flex items-baseline gap-4">
+        <h2 class="h2 glitch-text"><span class="glitch-text__content">Passions</span><span class="glitch-text__slice" aria-hidden="true">Passions</span></h2>
+        <blockquote class="text-sm">Become <strong>Inspired</strong></blockquote>
+      </div>
 
       <ul class="clear-both">
         {#each character.passions as passion, i (i)}
@@ -104,8 +108,10 @@
     </section>
 
     <section id="skills">
-      <h2 class="h2 float-left">Skills</h2>
-      <blockquote class="text-sm float-left px-4 pt-8 block">Roll less than value for <strong>Success</strong>, equal for a <strong>Critical</strong></blockquote>
+      <div class="flex items-baseline gap-4">
+        <h2 class="h2 glitch-text"><span class="glitch-text__content">Skills</span><span class="glitch-text__slice" aria-hidden="true">Skills</span></h2>
+        <blockquote class="text-sm">Roll less than value for <strong>Success</strong>, equal for a <strong>Critical</strong></blockquote>
+      </div>
 
       <div class="flex flex-col clear-both">
         {#if character.courtlySkills.length > 0}

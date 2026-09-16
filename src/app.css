@@ -20,11 +20,65 @@
   font-style: normal;
 }
 
-body {
-  font-family: 'Orbitron', system-ui, sans-serif;
+:root {
+  --color-cyan: #56e5ff;
+  --color-magenta: #ff43c7;
+  --color-red: #d4145a;
+  --color-glitch-left: var(--color-cyan);
+  --color-glitch-left-shadow-base: color-mix(in srgb, var(--color-glitch-left) 70%, var(--color-black));
+  --color-glitch-right: var(--color-red);
+  --color-glitch-right-shadow-base: color-mix(in srgb, var(--color-glitch-right) 70%, var(--color-black));
+  --color-synthwave-scanline: color-mix(in srgb, var(--color-surface-contrast-light) 10%, transparent);
+  --color-synthwave-surface-end: color-mix(in srgb, var(--color-cyan) 5%, var(--color-black));
+  --color-synthwave-surface-start: color-mix(in srgb, var(--color-cyan) 15%, var(--color-black));
+  --color-synthwave-wash-end: color-mix(in srgb, var(--color-magenta) 40%, transparent);
+  --color-synthwave-wash-start: color-mix(in srgb, var(--color-magenta) 10%, transparent);
+  --color-contrast-500: var(--color-cyan);
+  --color-contrast-600: color-mix(in srgb, var(--color-cyan) 80%, var(--color-black));
+  --color-primary-400: color-mix(in srgb, var(--color-magenta) 70%, var(--color-white));
+  --color-primary-500: var(--color-magenta);
+  --color-primary-600: color-mix(in srgb, var(--color-magenta) 80%, var(--color-black));
+  --color-surface-900: color-mix(in srgb, var(--color-magenta) 10%, var(--color-black));
+  --color-surface-950: color-mix(in srgb, var(--color-magenta) 5%, var(--color-black));
 }
 
-h1::first-letter, h2::first-letter {
+html {
+  background: var(--color-surface-950);
+  color-scheme: dark;
+}
+
+body {
+  background:
+    linear-gradient(180deg, var(--color-synthwave-wash-start), var(--color-synthwave-wash-end)),
+    repeating-linear-gradient(0deg, var(--color-synthwave-scanline) 0 1px, transparent 1px 4px),
+    var(--color-surface-950);
+  color: var(--color-surface-contrast-light);
+  font-family: 'Orbitron', system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+.section-container {
+  background: linear-gradient(
+    var(--color-synthwave-surface-end),
+    var(--color-synthwave-surface-start)
+  );
+  border-inline: 1px solid color-mix(in srgb, var(--color-primary-500) 30%, transparent);
+  box-shadow: 0 0 5rem color-mix(in srgb, var(--color-primary-500) 10%, transparent);
+  margin-inline: auto;
+  max-width: 96rem;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-contrast-500);
+}
+
+a:hover {
+  color: var(--color-primary-500);
+}
+
+.glitch-text__content::first-letter,
+.glitch-text__slice::first-letter {
   text-transform: uppercase;
   font-family: 'CamelotCaps', 'Orbitron', system-ui, sans-serif;
   font-weight: normal;
@@ -34,5 +88,197 @@ h1::first-letter, h2::first-letter {
 }
 
 h3 {
+  color: var(--color-primary-500);
   font-size: 1em;
+}
+
+strong {
+  color: var(--color-primary-500);
+}
+
+.trait-shield {
+  fill: var(--color-contrast-600);
+  stroke: var(--color-contrast-600);
+}
+
+.trait-shield.famous {
+  fill: var(--color-primary-600);
+  stroke: var(--color-primary-600);
+}
+
+.trait-shield-value {
+  color: var(--color-surface-contrast-light);
+}
+
+.glitch-text {
+  animation: glitch-transform 10s steps(1, end) infinite;
+  color: var(--color-primary-500);
+  display: inline-block;
+  isolation: isolate;
+  position: relative;
+}
+
+.glitch-text__content {
+  animation: chromatic-aberration 10s steps(1, end) infinite;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+
+.glitch-text__slice {
+  animation: glitch-slice 10s steps(1, end) infinite;
+  color: var(--color-surface-contrast-light);
+  display: inline-block;
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
+@keyframes glitch-transform {
+  0%,
+  97.5%,
+  100% {
+    transform: translateX(0) skewX(0);
+  }
+
+  98% {
+    transform: translateX(-3px) skewX(-0.7deg);
+  }
+
+  98.5% {
+    transform: translateX(2px) skewX(0.9deg);
+  }
+
+  99% {
+    transform: translateX(-1px) skewX(-0.4deg);
+  }
+
+  99.5% {
+    transform: translateX(1px) skewX(0.2deg);
+  }
+}
+
+@keyframes glitch-slice {
+  0%,
+  97.5%,
+  100% {
+    clip-path: inset(0);
+    opacity: 0;
+  }
+
+  98% {
+    clip-path: inset(15% 0 45%);
+    opacity: 0.7;
+  }
+
+  98.5% {
+    clip-path: inset(55% 0 15%);
+    opacity: 0.5;
+  }
+
+  99% {
+    clip-path: inset(10% 0 65%);
+    opacity: 0.7;
+  }
+
+  99.5% {
+    clip-path: inset(35% 0);
+    opacity: 0.5;
+  }
+}
+
+@keyframes chromatic-aberration {
+  0%,
+  97.5%,
+  100% {
+    text-shadow:
+      2px 0 var(--color-glitch-right-shadow-base),
+      -2px 0 var(--color-glitch-left-shadow-base);
+  }
+
+  98% {
+    text-shadow:
+      6px 0 var(--color-glitch-right-shadow-base),
+      -4px 0 var(--color-glitch-left-shadow-base);
+  }
+
+  98.5% {
+    text-shadow:
+      -5px 0 var(--color-glitch-right-shadow-base),
+      7px 0 var(--color-glitch-left-shadow-base);
+  }
+
+  99% {
+    text-shadow:
+      4px 0 var(--color-glitch-right-shadow-base),
+      -6px 0 var(--color-glitch-left-shadow-base);
+  }
+
+  99.5% {
+    text-shadow:
+      -3px 0 var(--color-glitch-right-shadow-base),
+      5px 0 var(--color-glitch-left-shadow-base);
+  }
+}
+
+@media print {
+  html {
+    background: var(--color-white);
+    color-scheme: light;
+  }
+
+  body,
+  .section-container {
+    background: var(--color-white);
+    box-shadow: none;
+    color: var(--color-black);
+  }
+
+  .section-container {
+    border: 0;
+  }
+
+  a {
+    color: var(--color-black);
+  }
+
+  .glitch-text {
+    animation: none;
+    color: var(--color-black);
+    text-shadow: none;
+  }
+
+  strong,
+  h3 {
+    color: var(--color-black);
+  }
+
+  .glitch-text__content,
+  .glitch-text__slice {
+    animation: none;
+    text-shadow: none;
+  }
+
+  .glitch-text__slice {
+    display: none;
+  }
+
+  .trait-shield {
+    fill: none;
+    stroke: var(--color-black);
+  }
+
+  .trait-shield.famous {
+    fill: var(--color-black);
+    stroke: var(--color-black);
+  }
+
+  .trait-shield-value {
+    color: var(--color-black);
+  }
+
+  .trait-shield-value.famous {
+    color: var(--color-white);
+  }
 }

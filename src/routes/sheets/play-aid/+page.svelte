@@ -1,9 +1,9 @@
-<h1 class="h1">Pendragon</h1>
+<h1 class="h1 glitch-text"><span class="glitch-text__content">Pendragon</span><span class="glitch-text__slice" aria-hidden="true">Pendragon</span></h1>
 
 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 print:grid-cols-2">
   <div>
     <section>
-      <h2 class="h2">Rolls</h2>
+      <h2 class="h2 glitch-text"><span class="glitch-text__content">Rolls</span><span class="glitch-text__slice" aria-hidden="true">Rolls</span></h2>
 
       <p>For an <strong>Unopposed Roll</strong>:</p>
 
@@ -43,7 +43,7 @@
     </section>
 
     <section>
-      <h2 class="h2">Passions and Inspiration</h2>
+      <h2 class="h2 glitch-text"><span class="glitch-text__content">Passions and Inspiration</span><span class="glitch-text__slice" aria-hidden="true">Passions and Inspiration</span></h2>
 
       <p>For an <strong>Inspiration Roll</strong>:</p>
 
@@ -66,7 +66,7 @@
     </section>
 
     <section>
-      <h2 class="h2">Traits</h2>
+      <h2 class="h2 glitch-text"><span class="glitch-text__content">Traits</span><span class="glitch-text__slice" aria-hidden="true">Traits</span></h2>
 
       <ul class="list-inside list-disc p-4">
         <li>
@@ -88,7 +88,7 @@
 
   <div>
     <section>
-      <h2 class="h2">Combat</h2>
+      <h2 class="h2 glitch-text"><span class="glitch-text__content">Combat</span><span class="glitch-text__slice" aria-hidden="true">Combat</span></h2>
 
       <ul class="list-inside list-disc p-4">
         <li>Each knight has a list of <strong>Martial Skills</strong> they are trained in</li>
@@ -118,7 +118,7 @@
     </section>
 
     <section>
-      <h2 class="h2">Names</h2>
+      <h2 class="h2 glitch-text"><span class="glitch-text__content">Names</span><span class="glitch-text__slice" aria-hidden="true">Names</span></h2>
 
       <h3 class="h3">Male Names</h3>
       <p>

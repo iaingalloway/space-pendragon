@@ -3,7 +3,7 @@
   import { labels } from '$lib/character.model.js';
 </script>
 
-<h1 class="h1">Legends</h1>
+<h1 class="h1 glitch-text"><span class="glitch-text__content">Legends</span><span class="glitch-text__slice" aria-hidden="true">Legends</span></h1>
 
 <table class="table-hover table">
   <thead>

@@ -2,7 +2,7 @@
   import { mechKeys, mechs } from '$lib/mechs';
 </script>
 
-<h1 class="h1">Frames</h1>
+<h1 class="h1 glitch-text"><span class="glitch-text__content">Frames</span><span class="glitch-text__slice" aria-hidden="true">Frames</span></h1>
 
 <table class="table-hover table">
   <thead>

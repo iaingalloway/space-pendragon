@@ -1,13 +1,13 @@
-<h1 class="h1">Welcome to Space Pendragon</h1>
+<h1 class="h1 glitch-text"><span class="glitch-text__content">Welcome to Space Pendragon</span><span class="glitch-text__slice" aria-hidden="true">Welcome to Space Pendragon</span></h1>
 
-<h2>Sheets</h2>
+<h2 class="glitch-text"><span class="glitch-text__content">Sheets</span><span class="glitch-text__slice" aria-hidden="true">Sheets</span></h2>
 
 <ul class="list-disc list-inside p-4">
   <li><a href="/characters" target="_blank">Blank</a></li>
   <li><a href="/sheets/history" target="_blank">History</a></li>
 </ul>
 
-<h2>NPCs</h2>
+<h2 class="glitch-text"><span class="glitch-text__content">NPCs</span><span class="glitch-text__slice" aria-hidden="true">NPCs</span></h2>
 
 <ul class="list-disc list-inside p-4">
   <li>Roderick's court:
@@ -34,7 +34,7 @@
   </li>
 </ul>
 
-<h2>Character Creation</h2>
+<h2 class="glitch-text"><span class="glitch-text__content">Character Creation</span><span class="glitch-text__slice" aria-hidden="true">Character Creation</span></h2>
 
 <ul class="list-disc list-inside p-4">
   <li><a href="/legends" target="_blank">Legends</a></li>

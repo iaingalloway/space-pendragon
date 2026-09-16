@@ -4,7 +4,7 @@
 
 <div class="grid grid-cols-1 gap-8 md:grid-cols-3 print:grid-cols-3">
   <div class="col-span-1">
-    <h1 class="h1">History</h1>
+    <h1 class="h1 glitch-text"><span class="glitch-text__content">History</span><span class="glitch-text__slice" aria-hidden="true">History</span></h1>
   </div>
   <div class="col-span-1">
     <div><strong>Family:</strong></div>
