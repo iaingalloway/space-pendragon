@@ -137,10 +137,6 @@ strong {
   position: relative;
 }
 
-.index-heading {
-  display: block;
-}
-
 .glitch-text__content {
   animation: chromatic-aberration 10s steps(1, end) infinite;
   display: inline-block;
